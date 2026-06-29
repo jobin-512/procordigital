@@ -1,0 +1,84 @@
+@import "tailwindcss";
+
+@theme {
+  --color-ink: #07111f;
+  --color-paper: #f6f0e6;
+  --color-paper-soft: #fffaf0;
+  --color-blueprint: #145cff;
+  --color-blue-pop: #4db7ff;
+  --color-blue-pale: #d9eeff;
+  --color-accent: #fff04d;
+  --color-hot: #ff5a7a;
+  --font-sans: "Arial", "Helvetica", sans-serif;
+  --font-display: "Arial Black", "Impact", "Arial", sans-serif;
+}
+
+:root {
+  color: var(--color-ink);
+  background: var(--color-paper);
+  font-family: var(--font-sans);
+}
+
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(77, 183, 255, 0.28), transparent 24rem),
+    radial-gradient(circle at 80% 0%, rgba(20, 92, 255, 0.16), transparent 22rem),
+    linear-gradient(90deg, rgba(7, 17, 31, 0.045) 1px, transparent 1px),
+    linear-gradient(rgba(7, 17, 31, 0.045) 1px, transparent 1px),
+    var(--color-paper);
+  background-size: auto, auto, 32px 32px, 32px 32px, auto;
+}
+
+::selection {
+  background: var(--color-accent);
+  color: var(--color-ink);
+}
+
+@layer components {
+  .container-brutal {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .brutal-card {
+    @apply border-4 border-ink bg-paper-soft shadow-[8px_8px_0_#07111f];
+  }
+
+  .brutal-card-blue {
+    @apply border-4 border-ink bg-blueprint text-white shadow-[8px_8px_0_#07111f];
+  }
+
+  .brutal-button {
+    @apply inline-flex items-center justify-center rounded-none border-4 border-ink bg-accent px-6 py-3 font-black uppercase tracking-tight text-ink shadow-[5px_5px_0_#07111f] transition-all duration-150 hover:-translate-y-1 hover:shadow-[8px_8px_0_#07111f] active:translate-x-1 active:translate-y-1 active:shadow-[2px_2px_0_#07111f];
+  }
+
+  .brutal-button-blue {
+    @apply inline-flex items-center justify-center rounded-none border-4 border-ink bg-blueprint px-6 py-3 font-black uppercase tracking-tight text-white shadow-[5px_5px_0_#07111f] transition-all duration-150 hover:-translate-y-1 hover:bg-blue-pop hover:text-ink hover:shadow-[8px_8px_0_#07111f] active:translate-x-1 active:translate-y-1 active:shadow-[2px_2px_0_#07111f];
+  }
+
+  .section-label {
+    @apply inline-flex border-3 border-ink bg-blue-pale px-4 py-2 text-xs font-black uppercase tracking-widest shadow-[4px_4px_0_#07111f];
+  }
+
+  .display-title {
+    @apply font-display text-5xl leading-[0.9] tracking-[-0.06em] sm:text-6xl lg:text-8xl;
+  }
+}
