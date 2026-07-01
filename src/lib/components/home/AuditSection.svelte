@@ -1,5 +1,7 @@
 <script lang="ts">
   import { reveal } from '$lib/actions/reveal';
+  import ImageSlot from '$lib/components/common/ImageSlot.svelte';
+  import audit from "$lib/assets/home/4.webp"
 
   const checks = [
     { label: 'Tracking', score: '91%', width: '91%' },
@@ -20,23 +22,33 @@
       <a class="brutal-button-blue mt-7" href="#contact">Request audit</a>
     </div>
 
-    <div use:reveal={{ x: 40, delay: 120 }} class="brutal-card bg-white p-5 sm:p-7">
-      <div class="mb-5 flex items-center justify-between border-4 border-ink bg-blue-pale p-4">
-        <p class="font-black uppercase">Procor leak scanner</p>
-        <p class="border-3 border-ink bg-accent px-3 py-1 font-black">LIVE</p>
+    <div class="grid gap-6">
+      <div use:reveal={{ x: 40, delay: 120 }} class="brutal-card bg-white p-5 sm:p-7">
+        <div class="mb-5 flex items-center justify-between border-4 border-ink bg-blue-pale p-4">
+          <p class="font-black uppercase">Procor leak scanner</p>
+          <p class="border-3 border-ink bg-accent px-3 py-1 font-black">LIVE</p>
+        </div>
+        <div class="grid gap-4">
+          {#each checks as check, index}
+            <div class="border-4 border-ink bg-paper p-4" use:reveal={{ y: 18, delay: 160 + index * 90 }}>
+              <div class="mb-2 flex justify-between font-black uppercase">
+                <span>{check.label}</span>
+                <span>{check.score}</span>
+              </div>
+              <div class="h-6 border-4 border-ink bg-white">
+                <div class="h-full bg-blueprint animate-meter-pulse" style={`width: ${check.width}`}></div>
+              </div>
+            </div>
+          {/each}
+        </div>
       </div>
-      <div class="grid gap-4">
-        {#each checks as check, index}
-          <div class="border-4 border-ink bg-paper p-4" use:reveal={{ y: 18, delay: 160 + index * 90 }}>
-            <div class="mb-2 flex justify-between font-black uppercase">
-              <span>{check.label}</span>
-              <span>{check.score}</span>
-            </div>
-            <div class="h-6 border-4 border-ink bg-white">
-              <div class="h-full bg-blueprint animate-meter-pulse" style={`width: ${check.width}`}></div>
-            </div>
-          </div>
-        {/each}
+
+      <div use:reveal={{ x: 40, delay: 220 }}>
+        <ImageSlot
+          variant="light"
+          title={audit}
+          description="Place your analytics dashboard, before/after chart, or audit report preview here."
+        />
       </div>
     </div>
   </div>

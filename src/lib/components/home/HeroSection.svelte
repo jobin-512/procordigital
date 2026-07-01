@@ -2,7 +2,7 @@
 </script>
 
 <section class="relative overflow-hidden py-14 sm:py-20 lg:py-24">
-  <div class="pointer-events-none absolute left-[6%] top-24 hidden border-4 border-ink bg-accent px-4 py-2 font-black uppercase shadow-[5px_5px_0_#07111f] animate-bolt-wiggle lg:block">
+  <div class="pointer-events-none 2xl:absolute  left-[1%] top-24 hidden border-4 border-ink bg-accent px-4 py-2 font-black uppercase shadow-[5px_5px_0_#07111f] animate-bolt-wiggle 2xl:block">
     Revenue leak?
   </div>
   <div class="pointer-events-none absolute bottom-16 right-[8%] hidden border-4 border-ink bg-blue-pop px-4 py-2 font-black uppercase shadow-[5px_5px_0_#07111f] animate-bolt-wiggle [animation-delay:1.1s] xl:block">
