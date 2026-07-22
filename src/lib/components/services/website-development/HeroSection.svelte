@@ -2,14 +2,14 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section class="relative py-20 lg:py-32 noise-overlay grid-pattern-tight overflow-hidden" aria-labelledby="webdev-hero-heading">
+<section class="relative section-padding-hero noise-overlay grid-pattern-tight overflow-hidden" aria-labelledby="webdev-hero-heading">
   <div class="absolute inset-0 bg-gradient-to-br from-blueprint/10 via-transparent to-cyan/10 pointer-events-none"></div>
   <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-r from-blueprint/15 to-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
 
   <div class="container-brutal relative z-10">
     <div use:reveal class="max-w-4xl">
       <span class="section-label-insane">Web Development</span>
-      <h1 id="webdev-hero-heading" class="mt-8 font-display text-6xl lg:text-8xl xl:text-9xl tracking-[-0.08em] leading-[0.85] animate-text-reveal">
+      <h1 id="webdev-hero-heading" class="mt-8 hero-heading-xl animate-text-reveal">
         Websites that
         <br />
         <span class="gradient-text-cyan">sell, not just</span>
@@ -31,21 +31,21 @@
       <a href="#process" class="brutal-button-outline">See our process</a>
     </div>
 
-    <div use:reveal={{ delay: 500, y: 30 }} class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="border-4 border-ink bg-white p-5 shadow-[6px_6px_0_#07111f]">
-        <p class="font-display text-4xl lg:text-5xl tracking-[-0.08em] text-blueprint">&lt;1.2s</p>
+    <div use:reveal={{ delay: 500, y: 30 }} class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
+        <p class="stat-number-lg text-blueprint">&lt;1.2s</p>
         <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Avg load time</p>
       </div>
-      <div class="border-4 border-ink bg-white p-5 shadow-[6px_6px_0_#07111f]">
-        <p class="font-display text-4xl lg:text-5xl tracking-[-0.08em] text-hot">+47%</p>
+      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
+        <p class="stat-number-lg text-hot">+47%</p>
         <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Conversion lift</p>
       </div>
-      <div class="border-4 border-ink bg-white p-5 shadow-[6px_6px_0_#07111f]">
-        <p class="font-display text-4xl lg:text-5xl tracking-[-0.08em] text-cyan">99.9%</p>
+      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
+        <p class="stat-number-lg text-cyan">99.9%</p>
         <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Uptime SLA</p>
       </div>
-      <div class="border-4 border-ink bg-white p-5 shadow-[6px_6px_0_#07111f]">
-        <p class="font-display text-4xl lg:text-5xl tracking-[-0.08em] text-lime">100</p>
+      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
+        <p class="stat-number-lg text-lime">100</p>
         <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Lighthouse score</p>
       </div>
     </div>

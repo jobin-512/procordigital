@@ -69,7 +69,7 @@
   ];
 </script>
 
-<section id="proof" class="relative py-16 lg:py-24 noise-overlay grid-pattern">
+<section id="proof" class="relative section-padding-lg noise-overlay grid-pattern">
   <div class="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent pointer-events-none" aria-hidden="true"></div>
 
   <div class="container-brutal relative z-10">

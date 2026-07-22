@@ -69,7 +69,7 @@
   ];
 </script>
 
-<section id="packages" class="relative bg-ink py-16 lg:py-28 text-white noise-overlay">
+<section id="packages" class="relative bg-ink section-padding-hero text-white noise-overlay">
   <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,240,77,0.06),transparent_60%)] pointer-events-none" aria-hidden="true"></div>
   <div class="absolute inset-0 bg-[repeating-linear-gradient(45deg,rgba(255,255,255,0.01),rgba(255,255,255,0.01)_1px,transparent_1px,transparent_3px)] pointer-events-none" aria-hidden="true"></div>
 

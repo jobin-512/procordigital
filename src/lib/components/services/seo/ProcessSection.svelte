@@ -10,13 +10,13 @@
   ];
 </script>
 
-<section id="process" class="relative py-16 lg:py-24 noise-overlay grid-pattern-tight" aria-labelledby="process-heading">
+<section id="process" class="relative section-padding-lg noise-overlay grid-pattern-tight" aria-labelledby="process-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-lime/5 via-transparent to-blueprint/5 pointer-events-none"></div>
 
-  <div class="container-brutal relative z-10 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
+  <div class="container-brutal relative z-10 process-grid">
     <div use:reveal={{ x: -40 }} class="lg:sticky lg:top-28">
       <span class="section-label-insane">Our Process</span>
-      <h2 id="process-heading" class="mt-6 font-display text-5xl lg:text-7xl tracking-[-0.08em] leading-[0.9] max-w-xl animate-text-reveal">
+      <h2 id="process-heading" class="mt-6 section-heading max-w-xl animate-text-reveal">
         SEO that
         <br />
         <span class="gradient-text-cyan">compounds.</span>
@@ -32,16 +32,16 @@
       </a>
     </div>
 
-    <div class="grid gap-5">
+    <div class="process-steps">
       {#each steps as step, i}
-        <div use:reveal={{ x: 40, delay: i * 120 }} class="brutal-card-insane bg-white p-6 relative overflow-hidden group">
+        <div use:reveal={{ x: 40, delay: i * 120 }} class="step-card">
           <div class="absolute -top-4 -right-4 size-20 border-4 border-ink bg-{step.color} rotate-12 opacity-10 group-hover:opacity-25 group-hover:rotate-0 transition-all duration-300 pointer-events-none"></div>
-          <div class="flex items-start gap-5">
-            <span class="font-display text-5xl tracking-[-0.08em] text-{step.color} opacity-30">{step.num}</span>
+          <div class="step-card-inner">
+            <span class="step-number text-{step.color} opacity-30">{step.num}</span>
             <div class="flex-1 min-w-0">
               <h3 class="font-display text-2xl tracking-[-0.06em]">{step.title}</h3>
               <p class="mt-2 text-sm font-bold leading-snug text-ink/70">{step.description}</p>
-              <ul class="mt-3 grid grid-cols-2 gap-2" role="list">
+              <ul class="mt-3 deliverables-grid" role="list">
                 {#each step.deliverables as d}
                   <li class="flex items-center gap-2 text-xs font-bold text-ink/60">
                     <span class="w-4 h-4 border-2 border-ink bg-{step.color} flex items-center justify-center text-[8px] flex-shrink-0">✓</span>

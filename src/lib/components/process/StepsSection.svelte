@@ -49,13 +49,13 @@
   ];
 </script>
 
-<section id="steps" class="relative py-16 lg:py-24 noise-overlay grid-pattern" aria-labelledby="steps-heading">
+<section id="steps" class="relative section-padding-lg noise-overlay grid-pattern" aria-labelledby="steps-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-blueprint/5 pointer-events-none"></div>
 
-  <div class="container-brutal relative z-10 grid gap-10 lg:grid-cols-[1fr_1.2fr] lg:items-start">
+  <div class="container-brutal relative z-10 process-grid">
     <div use:reveal={{ x: -40 }} class="lg:sticky lg:top-28 space-y-6">
       <span class="section-label-insane inline-block">The 4-Phase Protocol</span>
-      <h2 id="steps-heading" class="font-display text-5xl leading-[0.9] tracking-[-0.08em] sm:text-6xl lg:text-8xl">
+      <h2 id="steps-heading" class="section-heading">
         Four phases.
         <br />
         <span class="gradient-text-blueprint">Zero</span>
@@ -73,7 +73,7 @@
       </a>
     </div>
 
-    <div class="grid gap-5">
+    <div class="process-steps">
       {#each steps as step, i}
         <article use:reveal={{ x: 40, delay: i * 120 }} class="brutal-card-insane grid gap-4 sm:grid-cols-[5rem_1fr] p-5 sm:p-7 relative overflow-hidden group {step.bg}" style="border-color: var(--color-ink);">
           <div class="relative grid place-items-center border-4 border-ink bg-{step.color} font-display text-4xl sm:text-5xl tracking-[-0.08em] shadow-[5px_5px_0_#07111f] z-10">

@@ -79,7 +79,7 @@
         {#each stats as stat}
           <article class="brutal-card-insane p-4 text-center group relative overflow-hidden" aria-label="{stat.value} {stat.label}">
             <div class="absolute inset-0 bg-gradient-to-br from-{stat.accent}/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-            <p class="font-display text-4xl lg:text-5xl tracking-[-0.08em] relative z-10 gradient-text-{stat.accent}">{stat.value}</p>
+            <p class="stat-number-lg relative z-10 gradient-text-{stat.accent}">{stat.value}</p>
             <p class="mt-1 text-xs font-black uppercase tracking-wider relative z-10">{stat.label}</p>
           </article>
         {/each}

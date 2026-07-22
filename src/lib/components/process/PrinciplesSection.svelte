@@ -18,32 +18,32 @@
   ];
 </script>
 
-<section id="principles" class="relative py-16 lg:py-24 noise-overlay grid-pattern-tight" aria-labelledby="principles-heading">
+<section id="principles" class="relative section-padding-lg noise-overlay grid-pattern-tight" aria-labelledby="principles-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-blueprint/5 via-transparent to-accent/5 pointer-events-none"></div>
 
   <div class="container-brutal relative z-10">
     <div use:reveal class="mb-12 lg:mb-16 text-center">
       <span class="section-label-insane">Our Principles</span>
-      <h2 id="principles-heading" class="mt-6 font-display text-5xl lg:text-7xl tracking-[-0.08em] leading-[0.9] max-w-4xl mx-auto animate-text-reveal">
+      <h2 id="principles-heading" class="mt-6 section-heading max-w-4xl mx-auto animate-text-reveal">
         Built on principles,
         <br />
         <span class="gradient-text-accent">not promises.</span>
       </h2>
     </div>
 
-    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-4 mb-10">
+    <div class="grid gap-4 sm:gap-5 md:grid-cols-2 lg:grid-cols-4 mb-10">
       {#each principles as principle, i}
-        <article use:reveal={{ y: 30, delay: i * 80 }} class="brutal-card-insane p-6 bg-white relative overflow-hidden group">
+        <article use:reveal={{ y: 30, delay: i * 80 }} class="brutal-card-insane p-5 sm:p-6 bg-white relative overflow-hidden group">
           <div class="absolute -top-3 -right-3 size-16 border-4 border-ink bg-{principle.color} rotate-6 opacity-15 group-hover:opacity-30 group-hover:rotate-0 transition-all duration-300 pointer-events-none"></div>
-          <span class="font-display text-5xl tracking-[-0.08em] text-{principle.color} opacity-30">{principle.num}</span>
+          <span class="step-number text-{principle.color} opacity-30">{principle.num}</span>
           <h3 class="font-display text-xl tracking-[-0.06em] mt-3 mb-2">{principle.title}</h3>
           <p class="text-sm font-bold leading-snug text-ink/70">{principle.description}</p>
         </article>
       {/each}
     </div>
 
-    <div class="grid gap-6 lg:grid-cols-2">
-      <div use:reveal={{ x: -30, delay: 200 }} class="brutal-card-insane bg-blueprint p-6 sm:p-8 text-white">
+    <div class="grid gap-5 sm:gap-6 lg:grid-cols-2">
+      <div use:reveal={{ x: -30, delay: 200 }} class="brutal-card-insane bg-blueprint p-5 sm:p-6 lg:p-8 text-white">
         <div class="mb-5 flex items-center gap-3 border-4 border-white bg-accent p-4">
           <span class="text-3xl">⚡</span>
           <span class="font-black uppercase text-sm text-ink">Core Principles</span>
@@ -58,7 +58,7 @@
         </ul>
       </div>
 
-      <div use:reveal={{ x: 30, delay: 300 }} class="brutal-card-insane bg-ink p-6 sm:p-8 text-white">
+      <div use:reveal={{ x: 30, delay: 300 }} class="brutal-card-insane bg-ink p-5 sm:p-6 lg:p-8 text-white">
         <div class="mb-5 flex items-center gap-3 border-4 border-white bg-hot p-4">
           <span class="text-3xl">🚫</span>
           <span class="font-black uppercase text-sm text-white">What You Never Get</span>

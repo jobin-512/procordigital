@@ -19,13 +19,13 @@
   ];
 </script>
 
-<section id="accounting" class="relative py-16 lg:py-24 noise-overlay grid-pattern" aria-labelledby="accounting-heading">
+<section id="accounting" class="relative section-padding-lg noise-overlay grid-pattern" aria-labelledby="accounting-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-blue-pop/5 via-transparent to-blueprint/5 pointer-events-none"></div>
 
-  <div class="container-brutal relative z-10 grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+  <div class="container-brutal relative z-10 two-col-grid">
     <div use:reveal={{ x: -40 }}>
       <span class="section-label-insane">Accounting</span>
-      <h2 id="accounting-heading" class="mt-6 font-display text-5xl lg:text-7xl tracking-[-0.08em] leading-[0.9] max-w-xl animate-text-reveal">
+      <h2 id="accounting-heading" class="mt-6 section-heading max-w-xl animate-text-reveal">
         Numbers that
         <br />
         <span class="gradient-text-blueprint">tell the truth.</span>
@@ -37,14 +37,14 @@
       <div class="mt-8 flex flex-wrap gap-3">
         {#each stats as stat, i}
           <div class="border-4 border-ink bg-white px-5 py-3 shadow-[4px_4px_0_#07111f]" use:reveal={{ y: 20, delay: 200 + i * 100 }}>
-            <p class="font-display text-3xl tracking-[-0.08em] text-blue-pop">{stat.value}</p>
+            <p class="stat-number text-blue-pop">{stat.value}</p>
             <p class="mt-1 font-black uppercase text-[10px] tracking-widest text-ink/50">{stat.label}</p>
           </div>
         {/each}
       </div>
     </div>
 
-    <div use:reveal={{ x: 40, delay: 150 }} class="brutal-card-insane bg-white p-6 sm:p-8">
+    <div use:reveal={{ x: 40, delay: 150 }} class="brutal-card-insane bg-white card-padding-lg">
       <div class="mb-5 flex items-center gap-3 border-4 border-ink bg-blue-pop p-4">
         <span class="text-3xl">📊</span>
         <span class="font-black uppercase text-sm text-ink">Accounting services</span>

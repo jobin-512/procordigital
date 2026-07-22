@@ -2,14 +2,14 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section class="relative py-20 lg:py-32 noise-overlay grid-pattern-tight overflow-hidden" aria-labelledby="compliance-hero-heading">
+<section class="relative section-padding-hero noise-overlay grid-pattern-tight overflow-hidden" aria-labelledby="compliance-hero-heading">
   <div class="absolute inset-0 bg-gradient-to-br from-accent/10 via-transparent to-hot/10 pointer-events-none"></div>
   <div class="absolute top-1/3 left-0 w-[500px] h-[500px] bg-gradient-to-r from-accent/12 to-hot/8 rounded-full blur-3xl pointer-events-none"></div>
 
   <div class="container-brutal relative z-10">
     <div use:reveal class="max-w-4xl">
       <span class="section-label-insane">Compliance</span>
-      <h1 id="compliance-hero-heading" class="mt-8 font-display text-6xl lg:text-8xl xl:text-9xl tracking-[-0.08em] leading-[0.85] animate-text-reveal">
+      <h1 id="compliance-hero-heading" class="mt-8 hero-heading-xl animate-text-reveal">
         Stay compliant.
         <br />
         <span class="gradient-text-accent">Stay protected.</span>
@@ -29,21 +29,21 @@
       <a href="#process" class="brutal-button-outline">See our process</a>
     </div>
 
-    <div use:reveal={{ delay: 500, y: 30 }} class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
-      <div class="border-4 border-ink bg-white p-5 shadow-[6px_6px_0_#07111f]">
-        <p class="font-display text-4xl lg:text-5xl tracking-[-0.08em] text-ink">100%</p>
+    <div use:reveal={{ delay: 500, y: 30 }} class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
+      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
+        <p class="stat-number-lg text-ink">100%</p>
         <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Audit pass rate</p>
       </div>
-      <div class="border-4 border-ink bg-white p-5 shadow-[6px_6px_0_#07111f]">
-        <p class="font-display text-4xl lg:text-5xl tracking-[-0.08em] text-hot">-78%</p>
+      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
+        <p class="stat-number-lg text-hot">-78%</p>
         <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Risk reduction</p>
       </div>
-      <div class="border-4 border-ink bg-white p-5 shadow-[6px_6px_0_#07111f]">
-        <p class="font-display text-4xl lg:text-5xl tracking-[-0.08em] text-cyan">23</p>
+      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
+        <p class="stat-number-lg text-cyan">23</p>
         <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Avg gaps found</p>
       </div>
-      <div class="border-4 border-ink bg-white p-5 shadow-[6px_6px_0_#07111f]">
-        <p class="font-display text-4xl lg:text-5xl tracking-[-0.08em] text-lime">$0</p>
+      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
+        <p class="stat-number-lg text-lime">$0</p>
         <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Penalties incurred</p>
       </div>
     </div>

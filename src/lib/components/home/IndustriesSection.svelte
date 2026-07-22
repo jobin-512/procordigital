@@ -59,7 +59,7 @@
   ];
 </script>
 
-<section class="relative py-16 lg:py-24 noise-overlay grid-pattern-tight" aria-labelledby="industries-heading">
+<section class="relative section-padding-lg noise-overlay grid-pattern-tight" aria-labelledby="industries-heading">
   <div class="absolute inset-0 bg-gradient-to-br from-blueprint/5 via-transparent to-hot/5 pointer-events-none" aria-hidden="true"></div>
 
   <div class="container-brutal relative z-10">
@@ -76,7 +76,7 @@
       </p>
     </div>
 
-    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+    <div class="benefit-grid">
       {#each industries as industry, index}
         <article
           use:reveal={{ y: 30, delay: index * 80 }}

@@ -2,17 +2,17 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section id="contact" class="relative px-4 py-16 lg:py-28 noise-overlay grid-pattern" aria-labelledby="compliance-cta-heading">
+<section id="contact" class="relative px-4 section-padding-hero noise-overlay grid-pattern" aria-labelledby="compliance-cta-heading">
   <div class="absolute inset-0 bg-gradient-to-br from-ink via-blueprint to-ink pointer-events-none opacity-90" aria-hidden="true"></div>
   <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-accent/15 to-hot/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
 
-  <div use:reveal={{ scale: 0.95 }} class="container-brutal brutal-card-insane relative overflow-hidden bg-ink p-8 sm:p-12 lg:p-16 text-center z-10">
+  <div use:reveal={{ scale: 0.95 }} class="container-brutal cta-card bg-ink z-10">
     <div class="absolute left-6 top-6 hidden h-16 w-16 border-4 border-white bg-accent md:block animate-floaty" aria-hidden="true"></div>
     <div class="absolute right-6 bottom-6 hidden h-20 w-20 border-4 border-white bg-hot md:block animate-floaty [animation-delay:1.5s]" aria-hidden="true"></div>
 
     <span class="section-label-void inline-block mb-6 animate-slide-up">Ready for compliance?</span>
 
-    <h2 id="compliance-cta-heading" class="mx-auto mt-6 max-w-4xl font-display text-5xl leading-[0.9] tracking-[-0.08em] sm:text-7xl lg:text-8xl text-white animate-text-reveal">
+    <h2 id="compliance-cta-heading" class="mx-auto mt-6 max-w-4xl cta-heading text-white animate-text-reveal">
       Protect your
       <br />
       <span class="gradient-text-accent">business today.</span>
@@ -26,7 +26,7 @@
       <label class="sr-only" for="compliance-email">Email address</label>
       <input
         id="compliance-email"
-        class="border-4 border-white bg-void px-5 py-4 text-lg font-bold shadow-[5px_5px_0_#fff04d] outline-none placeholder:text-white/40 focus:bg-blueprint transition-colors text-white"
+        class="border-4 border-white bg-void px-4 py-3 sm:px-5 sm:py-4 text-base sm:text-lg font-bold shadow-[5px_5px_0_#fff04d] outline-none placeholder:text-white/40 focus:bg-blueprint transition-colors text-white"
         type="email"
         placeholder="you@company.com"
         required

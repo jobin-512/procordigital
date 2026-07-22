@@ -13,13 +13,13 @@
   ];
 </script>
 
-<section id="features" class="relative py-16 lg:py-24 noise-overlay grid-pattern" aria-labelledby="features-heading">
+<section id="features" class="relative section-padding-lg noise-overlay grid-pattern" aria-labelledby="features-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-transparent pointer-events-none"></div>
 
   <div class="container-brutal relative z-10">
     <div use:reveal class="mb-12 lg:mb-16">
       <span class="section-label-insane">Features</span>
-      <h2 id="features-heading" class="mt-6 font-display text-5xl lg:text-7xl tracking-[-0.08em] leading-[0.9] max-w-3xl animate-text-reveal">
+      <h2 id="features-heading" class="mt-6 section-heading max-w-3xl animate-text-reveal">
         Full compliance
         <br />
         <span class="gradient-text-accent">coverage.</span>
@@ -29,9 +29,9 @@
       </p>
     </div>
 
-    <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+    <div class="feature-grid">
       {#each features as feature, i}
-        <article use:reveal={{ y: 30, delay: i * 80 }} class="brutal-card-insane p-5 relative overflow-hidden group">
+        <article use:reveal={{ y: 30, delay: i * 80 }} class="brutal-card-insane p-4 sm:p-5 relative overflow-hidden group">
           <div class="absolute -top-3 -right-3 size-16 border-4 border-ink bg-{feature.color} rotate-6 opacity-15 group-hover:opacity-30 group-hover:rotate-0 transition-all duration-300 pointer-events-none"></div>
           <span class="text-3xl block mb-3">{feature.icon}</span>
           <h3 class="font-display text-xl tracking-[-0.06em] text-{feature.color} mb-2">{feature.title}</h3>

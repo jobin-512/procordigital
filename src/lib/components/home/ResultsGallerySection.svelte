@@ -31,7 +31,7 @@
   ] as const;
 </script>
 
-<section class="py-16 lg:py-24">
+<section class="section-padding-lg">
   <div class="container-brutal">
     <div use:reveal class="mb-10 flex flex-col justify-between gap-5 lg:flex-row lg:items-end">
       <div>

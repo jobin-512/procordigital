@@ -65,7 +65,7 @@
   ];
 </script>
 
-<section id="solutions" class="py-16 lg:py-28 relative noise-overlay grid-pattern">
+<section id="solutions" class="section-padding-hero relative noise-overlay grid-pattern">
   <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,rgba(255,240,77,0.08),transparent_40%)] pointer-events-none" aria-hidden="true"></div>
 
   <div class="container-brutal relative z-10">
@@ -83,7 +83,7 @@
       </p>
     </div>
 
-    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+    <div class="benefit-grid">
       {#each solutions as item, index}
         <article
           use:reveal={{ y: 30, delay: index * 80 }}

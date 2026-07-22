@@ -24,7 +24,7 @@
   ];
 </script>
 
-<section id="comparison" class="relative py-16 lg:py-24 noise-overlay grid-pattern" aria-labelledby="comparison-heading">
+<section id="comparison" class="relative section-padding-lg noise-overlay grid-pattern" aria-labelledby="comparison-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-ink/95 via-ink to-ink/90 pointer-events-none" aria-hidden="true"></div>
   <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-r from-blueprint/10 to-hot/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
 

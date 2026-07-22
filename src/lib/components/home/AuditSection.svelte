@@ -41,13 +41,13 @@
   };
 </script>
 
-<section id="audit" class="relative py-16 lg:py-24 noise-overlay grid-pattern" aria-labelledby="audit-heading">
+<section id="audit" class="relative section-padding-lg noise-overlay grid-pattern" aria-labelledby="audit-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-hot/5 via-transparent to-lime/5 pointer-events-none"></div>
 
   <div class="container-brutal relative z-10 grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-start">
     <div use:reveal={{ x: -40 }} class="lg:sticky lg:top-28">
       <span class="section-label-insane">Free revenue leak scan</span>
-      <h2 id="audit-heading" class="mt-6 font-display text-5xl lg:text-7xl tracking-[-0.08em] leading-[0.9] max-w-xl animate-text-reveal">
+      <h2 id="audit-heading" class="mt-6 section-heading max-w-xl animate-text-reveal">
         We find the money
         <br />
         <span class="gradient-text-hot">you're leaving</span>

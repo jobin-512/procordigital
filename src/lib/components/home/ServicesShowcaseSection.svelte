@@ -54,14 +54,14 @@
   ];
 </script>
 
-<section class="relative py-16 lg:py-24 noise-overlay grid-pattern-tight" aria-labelledby="services-heading">
+<section class="relative section-padding-lg noise-overlay grid-pattern-tight" aria-labelledby="services-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-transparent via-blueprint/5 to-transparent pointer-events-none"></div>
   <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-accent/10 to-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
 
   <div class="container-brutal relative z-10">
     <div use:reveal class="mb-12 lg:mb-16">
       <span class="section-label-insane">What we deploy</span>
-      <h2 id="services-heading" class="mt-6 font-display text-5xl lg:text-7xl tracking-[-0.08em] leading-[0.9] max-w-4xl animate-text-reveal">
+      <h2 id="services-heading" class="mt-6 section-heading max-w-4xl animate-text-reveal">
         Six growth systems.
         <br />
         <span class="gradient-text-cyan">Zero integration gaps.</span>

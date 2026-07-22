@@ -19,13 +19,13 @@
   ];
 </script>
 
-<section id="website-development" class="relative py-16 lg:py-24 noise-overlay grid-pattern" aria-labelledby="webdev-heading">
+<section id="website-development" class="relative section-padding-lg noise-overlay grid-pattern" aria-labelledby="webdev-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-blueprint/5 via-transparent to-transparent pointer-events-none"></div>
 
-  <div class="container-brutal relative z-10 grid gap-10 lg:grid-cols-[1fr_1fr] lg:items-center">
+  <div class="container-brutal relative z-10 two-col-grid">
     <div use:reveal={{ x: -40 }}>
       <span class="section-label-insane">Web Development</span>
-      <h2 id="webdev-heading" class="mt-6 font-display text-5xl lg:text-7xl tracking-[-0.08em] leading-[0.9] max-w-xl animate-text-reveal">
+      <h2 id="webdev-heading" class="mt-6 section-heading max-w-xl animate-text-reveal">
         Websites that
         <br />
         <span class="gradient-text-cyan">sell, not just</span>
@@ -39,14 +39,14 @@
       <div class="mt-8 flex flex-wrap gap-3">
         {#each stats as stat, i}
           <div class="border-4 border-ink bg-white px-5 py-3 shadow-[4px_4px_0_#07111f]" use:reveal={{ y: 20, delay: 200 + i * 100 }}>
-            <p class="font-display text-3xl tracking-[-0.08em] text-blueprint">{stat.value}</p>
+            <p class="stat-number text-blueprint">{stat.value}</p>
             <p class="mt-1 font-black uppercase text-[10px] tracking-widest text-ink/50">{stat.label}</p>
           </div>
         {/each}
       </div>
     </div>
 
-    <div use:reveal={{ x: 40, delay: 150 }} class="brutal-card-insane bg-white p-6 sm:p-8">
+    <div use:reveal={{ x: 40, delay: 150 }} class="brutal-card-insane bg-white card-padding-lg">
       <div class="mb-5 flex items-center gap-3 border-4 border-ink bg-blueprint p-4">
         <span class="text-3xl">🌐</span>
         <span class="font-black uppercase text-sm text-white">What we deploy</span>

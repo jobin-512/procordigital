@@ -17,7 +17,7 @@
   ];
 </script>
 
-<section class="py-16 lg:py-24">
+<section class="section-padding-lg">
   <div class="container-brutal">
     <div use:reveal class="mb-10 max-w-3xl">
       <span class="section-label">Stack friendly</span>

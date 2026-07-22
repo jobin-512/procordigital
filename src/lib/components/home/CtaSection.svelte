@@ -2,18 +2,18 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section id="contact" class="relative px-4 py-16 lg:py-28 noise-overlay grid-pattern" aria-labelledby="cta-heading">
+<section id="contact" class="relative px-4 section-padding-hero noise-overlay grid-pattern" aria-labelledby="cta-heading">
   <div class="absolute inset-0 bg-gradient-to-br from-accent via-transparent to-blueprint pointer-events-none opacity-50" aria-hidden="true"></div>
   <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-hot/10 to-cyan/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
 
-  <div use:reveal={{ scale: 0.95 }} class="container-brutal brutal-card-insane relative overflow-hidden bg-accent p-8 sm:p-12 lg:p-16 text-center z-10">
+  <div use:reveal={{ scale: 0.95 }} class="container-brutal brutal-card-insane relative overflow-hidden bg-accent cta-card text-center z-10">
     <div class="absolute left-6 top-6 hidden h-16 w-16 border-4 border-ink bg-blue-pop md:block animate-floaty" aria-hidden="true"></div>
     <div class="absolute right-6 bottom-6 hidden h-20 w-20 border-4 border-ink bg-hot md:block animate-floaty [animation-delay:1.5s]" aria-hidden="true"></div>
     <div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[400px] h-[400px] border-2 border-ink/20 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" aria-hidden="true"></div>
 
     <span class="section-label bg-white inline-block mb-6 animate-slide-up">Final sprint starts here</span>
 
-    <h2 id="cta-heading" class="mx-auto mt-6 max-w-4xl font-display text-5xl leading-[0.9] tracking-[-0.08em] sm:text-7xl lg:text-8xl animate-text-reveal">
+    <h2 id="cta-heading" class="mx-auto mt-6 max-w-4xl cta-heading animate-text-reveal">
       Ready to solve your
       <br />
       <span class="gradient-text-hot">loudest digital</span>

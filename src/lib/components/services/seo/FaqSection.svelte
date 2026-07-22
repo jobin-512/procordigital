@@ -17,13 +17,13 @@
   }
 </script>
 
-<section id="faq" class="relative py-16 lg:py-24 noise-overlay grid-pattern-tight" aria-labelledby="faq-heading">
+<section id="faq" class="relative section-padding-lg noise-overlay grid-pattern-tight" aria-labelledby="faq-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-blueprint/5 via-transparent to-transparent pointer-events-none"></div>
 
-  <div class="container-brutal relative z-10 grid gap-10 lg:grid-cols-[1fr_1.3fr] lg:items-start">
+  <div class="container-brutal relative z-10 faq-grid">
     <div use:reveal={{ x: -40 }}>
       <span class="section-label-insane">FAQ</span>
-      <h2 id="faq-heading" class="mt-6 font-display text-5xl lg:text-7xl tracking-[-0.08em] leading-[0.9] max-w-xl animate-text-reveal">
+      <h2 id="faq-heading" class="mt-6 section-heading max-w-xl animate-text-reveal">
         SEO questions
         <br />
         <span class="gradient-text-cyan">answered.</span>
@@ -33,11 +33,11 @@
       </p>
     </div>
 
-    <div class="grid gap-3">
+    <div class="grid gap-3 sm:gap-4">
       {#each faqs as faq, i}
         <div use:reveal={{ x: 30, delay: i * 80 }} class="brutal-card-insane bg-white overflow-hidden">
           <button
-            class="w-full px-6 py-5 text-left font-black uppercase text-sm tracking-wide flex items-center justify-between gap-4 hover:bg-blue-pale transition-colors"
+            class="w-full px-4 py-4 sm:px-6 sm:py-5 text-left font-black uppercase text-sm tracking-wide flex items-center justify-between gap-4 hover:bg-blue-pale transition-colors"
             onclick={() => toggle(i)}
             aria-expanded={openIndex === i}
           >
@@ -47,7 +47,7 @@
             </svg>
           </button>
           {#if openIndex === i}
-            <div class="px-6 pb-5 text-sm font-bold leading-snug text-ink/70 border-t-3 border-ink pt-4 animate-slide-down">
+            <div class="px-4 pb-4 sm:px-6 sm:pb-5 text-sm font-bold leading-snug text-ink/70 border-t-3 border-ink pt-4 animate-slide-down">
               {faq.a}
             </div>
           {/if}

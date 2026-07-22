@@ -37,7 +37,7 @@
   ];
 </script>
 
-<section id="faq" class="relative py-16 lg:py-24 noise-overlay grid-pattern" aria-labelledby="faq-heading">
+<section id="faq" class="relative section-padding-lg noise-overlay grid-pattern" aria-labelledby="faq-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent pointer-events-none" aria-hidden="true"></div>
 
   <div class="container-brutal max-w-5xl relative z-10">

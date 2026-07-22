@@ -49,7 +49,7 @@
   ];
 </script>
 
-<section id="process" class="py-16 lg:py-28 relative noise-overlay grid-pattern">
+<section id="process" class="section-padding-hero relative noise-overlay grid-pattern">
   <div class="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,rgba(255,240,77,0.08),transparent_50%)] pointer-events-none" aria-hidden="true"></div>
 
   <div class="container-brutal relative z-10">
@@ -89,7 +89,7 @@
         </div>
       </div>
 
-      <div class="grid gap-5">
+      <div class="process-steps">
         {#each steps as step, index}
           <article
             use:reveal={{ x: 34, delay: index * 120 }}

@@ -11,22 +11,22 @@
   ];
 </script>
 
-<section id="benefits" class="relative py-16 lg:py-24 noise-overlay grid-pattern" aria-labelledby="benefits-heading">
+<section id="benefits" class="relative section-padding-lg noise-overlay grid-pattern" aria-labelledby="benefits-heading">
   <div class="absolute inset-0 bg-gradient-to-b from-blue-pop/5 via-transparent to-blueprint/5 pointer-events-none"></div>
 
   <div class="container-brutal relative z-10">
     <div use:reveal class="mb-12 lg:mb-16 text-center">
       <span class="section-label-insane">Why Choose Us</span>
-      <h2 id="benefits-heading" class="mt-6 font-display text-5xl lg:text-7xl tracking-[-0.08em] leading-[0.9] max-w-4xl mx-auto animate-text-reveal">
+      <h2 id="benefits-heading" class="mt-6 section-heading max-w-4xl mx-auto animate-text-reveal">
         The accounting that
         <br />
         <span class="gradient-text-blueprint">drives growth.</span>
       </h2>
     </div>
 
-    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+    <div class="benefit-grid">
       {#each benefits as benefit, i}
-        <article use:reveal={{ y: 30, delay: i * 80 }} class="brutal-card-insane p-6 bg-white relative overflow-hidden group">
+        <article use:reveal={{ y: 30, delay: i * 80 }} class="brutal-card-insane p-5 sm:p-6 bg-white relative overflow-hidden group">
           <div class="absolute -bottom-4 -right-4 size-20 border-4 border-ink bg-blue-pop rotate-12 opacity-10 group-hover:opacity-20 group-hover:rotate-0 transition-all duration-300 pointer-events-none"></div>
           <div class="flex items-start justify-between gap-3 mb-3">
             <span class="text-3xl">{benefit.icon}</span>

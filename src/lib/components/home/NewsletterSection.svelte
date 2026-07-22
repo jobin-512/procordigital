@@ -2,7 +2,7 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section class="relative py-16 lg:py-24 noise-overlay grid-pattern-tight" aria-labelledby="newsletter-heading">
+<section class="relative section-padding-lg noise-overlay grid-pattern-tight" aria-labelledby="newsletter-heading">
   <div class="absolute inset-0 bg-gradient-to-br from-blueprint/5 via-transparent to-hot/5 pointer-events-none" aria-hidden="true"></div>
   <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[500px] bg-gradient-to-r from-accent/10 to-cyan/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
 
