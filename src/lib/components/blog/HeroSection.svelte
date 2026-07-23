@@ -24,7 +24,7 @@
       </h1>
       
       <p class="mt-8 max-w-2xl text-xl font-bold uppercase tracking-wide">
-        Marketing shit that ACTUALLY WORKS. No theoretical BS, just BATTLE-TESTED strategies from the trenches.
+        Marketing that ACTUALLY WORKS. No theoretical fluff, just BATTLE-TESTED strategies from the trenches.
       </p>
     </div>
     

@@ -5,7 +5,7 @@
     { title: 'Radical honesty', desc: 'We tell you what you need to hear, not what you want to hear. No sugarcoating, no politics.', icon: '01' },
     { title: 'Obsessive craft', desc: 'Every pixel, every word, every line of code is intentional. We obsess so you don\'t have to.', icon: '02' },
     { title: 'Revenue over vanity', desc: 'Trophies don\'t pay the bills. Your bottom line is the only metric that matters.', icon: '03' },
-    { title: 'Zero bullshit', desc: 'No jargon, no vanity metrics, no hidden fees. Just work that works.', icon: '04' },
+    { title: 'Zero fluff', desc: 'No jargon, no vanity metrics, no hidden fees. Just work that works.', icon: '04' },
     { title: 'Relentless speed', desc: 'While others plan, we ship. Speed is a feature, not a tradeoff.', icon: '05' },
     { title: 'Ownership mentality', desc: 'We treat your business like our own. Skin in the game. No exceptions.', icon: '06' },
   ];

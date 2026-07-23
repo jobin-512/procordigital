@@ -16,7 +16,7 @@
           <span class="text-gradient-emerald">Results first.</span>
         </h2>
         <p class="mt-4 text-base leading-relaxed text-muted max-w-lg">
-          Our office is wherever we get shit done. Remote-first by design, results-first by nature.
+          Our office is wherever we get things done. Remote-first by design, results-first by nature.
         </p>
 
         <div class="mt-8 space-y-3">
