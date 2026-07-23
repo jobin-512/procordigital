@@ -2,48 +2,45 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section id="contact" class="relative px-4 section-padding-hero noise-overlay grid-pattern" aria-labelledby="mobile-cta-heading">
-  <div class="absolute inset-0 bg-gradient-to-br from-hot via-transparent to-accent pointer-events-none opacity-40" aria-hidden="true"></div>
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-hot/10 to-accent/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+<section id="contact" class="relative section-padding-hero overflow-hidden" aria-labelledby="mobile-cta-heading">
+  <div class="absolute inset-0 bg-ink"></div>
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-blue/10 to-emerald/10 rounded-full blur-3xl pointer-events-none animate-float" aria-hidden="true"></div>
+  <div class="absolute inset-0 bg-grid-subtle opacity-[0.03] pointer-events-none" aria-hidden="true"></div>
 
-  <div use:reveal={{ scale: 0.95 }} class="container-brutal cta-card bg-hot z-10">
-    <div class="absolute left-6 top-6 hidden h-16 w-16 border-4 border-white bg-accent md:block animate-floaty" aria-hidden="true"></div>
-    <div class="absolute right-6 bottom-6 hidden h-20 w-20 border-4 border-white bg-blueprint md:block animate-floaty [animation-delay:1.5s]" aria-hidden="true"></div>
+  <div class="container-narrow relative z-10 text-center">
+    <div use:reveal={{ scale: 0.95 }}>
+      <span class="badge-dark mb-6 animate-fade-up">Ready to build?</span>
 
-    <span class="section-label-void inline-block mb-6 animate-slide-up">Ready to build?</span>
+      <h2 id="mobile-cta-heading" class="mt-8 hero-heading text-white animate-text-reveal">
+        Let's build your
+        <br />
+        <span class="text-gradient-blue">dream app.</span>
+      </h2>
 
-    <h2 id="mobile-cta-heading" class="mx-auto mt-6 max-w-4xl cta-heading text-white animate-text-reveal">
-      Let's build your
-      <br />
-      <span class="text-accent">dream app.</span>
-    </h2>
+      <p class="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-white/60 animate-fade-up" style="animation-delay: 200ms;">
+        Tell us about your app idea. We will map the right solution and deliver a free proposal within 48 hours.
+      </p>
 
-    <p class="mx-auto mt-6 max-w-2xl text-xl font-bold leading-snug text-white/80 animate-slide-up" style="animation-delay: 200ms;">
-      Tell us about your app idea. We'll map the right solution and deliver a free proposal within 48 hours.
-    </p>
+      <form class="mx-auto mt-10 flex flex-col sm:flex-row gap-3 max-w-lg animate-fade-up" style="animation-delay: 350ms;" aria-label="App project inquiry">
+        <label class="sr-only" for="mobile-email">Email address</label>
+        <input
+          id="mobile-email"
+          class="input-premium-dark flex-1"
+          type="email"
+          placeholder="you@company.com"
+          required
+        />
+        <button class="btn-blue whitespace-nowrap" type="submit">
+          Get free proposal
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M5 12h14M12 5l7 7-7 7"/>
+          </svg>
+        </button>
+      </form>
 
-    <form class="mx-auto mt-8 grid max-w-3xl gap-3 sm:grid-cols-[1fr_auto] animate-slide-up" style="animation-delay: 350ms;" aria-label="App project inquiry">
-      <label class="sr-only" for="mobile-email">Email address</label>
-      <input
-        id="mobile-email"
-        class="border-4 border-ink bg-white px-4 py-3 sm:px-5 sm:py-4 text-base sm:text-lg font-bold shadow-[5px_5px_0_#07111f] outline-none placeholder:text-ink/60 focus:bg-blue-pale transition-colors"
-        type="email"
-        placeholder="you@company.com"
-        required
-      />
-      <button class="brutal-button-insane whitespace-nowrap bg-accent text-ink" type="submit">
-        Get free proposal
-      </button>
-    </form>
-
-    <p class="mt-5 text-sm font-bold text-white/60 animate-slide-up" style="animation-delay: 500ms;">
-      Free proposal. No obligation. Scope breakdown + timeline + cost estimate.
-    </p>
+      <p class="mt-5 text-sm text-white/40 animate-fade-up" style="animation-delay: 500ms;">
+        Free proposal. No obligation. Scope breakdown plus timeline plus cost estimate.
+      </p>
+    </div>
   </div>
 </section>
-
-<style>
-  @media (prefers-reduced-motion: reduce) {
-    .animate-floaty { animation: none !important; }
-  }
-</style>

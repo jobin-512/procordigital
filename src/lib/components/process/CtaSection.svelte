@@ -4,7 +4,7 @@
 
 <section id="contact" class="relative px-4 section-padding-hero noise-overlay grid-pattern" aria-labelledby="process-cta-heading">
   <div class="absolute inset-0 bg-gradient-to-br from-accent via-transparent to-blueprint pointer-events-none opacity-50" aria-hidden="true"></div>
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-hot/10 to-cyan/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-hot/10 to-cyan/10 rounded-full blur-3xl pointer-events-none animate-float" aria-hidden="true"></div>
 
   <div use:reveal={{ scale: 0.95 }} class="container-brutal cta-card bg-accent z-10">
     <div class="absolute left-6 top-6 hidden h-16 w-16 border-4 border-ink bg-blue-pop md:block animate-floaty" aria-hidden="true"></div>
@@ -19,7 +19,7 @@
       <span class="gradient-text-cyan ml-2">your business.</span>
     </h2>
 
-    <p class="mx-auto mt-6 max-w-2xl text-xl font-bold leading-snug text-ink/80 animate-slide-up" style="animation-delay: 200ms;">
+    <p class="mx-auto mt-6 max-w-2xl text-xl font-bold leading-snug text-muted animate-slide-up" style="animation-delay: 200ms;">
       Tell us what's broken. We'll map the right sprint and deliver a free audit within 48 hours.
     </p>
 
@@ -27,7 +27,7 @@
       <label class="sr-only" for="process-email">Email address</label>
       <input
         id="process-email"
-        class="border-4 border-ink bg-white px-4 py-3 sm:px-5 sm:py-4 text-base sm:text-lg font-bold shadow-[5px_5px_0_#07111f] outline-none placeholder:text-ink/60 focus:bg-blue-pale transition-colors"
+        class="border-4 border-ink bg-white px-4 py-3 sm:px-5 sm:py-4 text-base sm:text-lg font-bold shadow-[5px_5px_0_#07111f] outline-none placeholder:text-muted focus:bg-blue-pale transition-colors"
         type="email"
         placeholder="you@company.com"
         required
@@ -37,7 +37,7 @@
       </button>
     </form>
 
-    <p class="mt-5 text-sm font-bold text-ink/50 animate-slide-up" style="animation-delay: 500ms;">
+    <p class="mt-5 text-sm font-bold text-muted animate-slide-up" style="animation-delay: 500ms;">
       Free audit. No obligation. 127-point diagnostic + sprint roadmap + revenue projection.
     </p>
 

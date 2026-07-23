@@ -13,22 +13,29 @@
     'Svelte',
     'Looker Studio',
     'Mailchimp',
-    'Notion'
+    'Notion',
   ];
 </script>
 
-<section class="section-padding-lg">
-  <div class="container-brutal">
-    <div use:reveal class="mb-10 max-w-3xl">
-      <span class="section-label">Stack friendly</span>
-      <h2 class="mt-6 font-display text-4xl leading-none tracking-[-0.08em] sm:text-6xl">We plug into the tools you already use.</h2>
+<section class="section-padding bg-white">
+  <div class="container-premium">
+    <div use:reveal class="max-w-3xl mb-10">
+      <span class="eyebrow">Stack friendly</span>
+      <h2 class="section-heading mt-5">
+        We plug into the tools
+        <br />
+        <span class="text-gradient-blue">you already use.</span>
+      </h2>
     </div>
 
-    <div class="grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-4">
+    <div class="flex flex-wrap gap-3" use:reveal>
       {#each tools as tool, index}
-        <div use:reveal={{ y: 26, delay: index * 35 }} class="border-4 border-ink bg-white p-5 text-center font-black uppercase shadow-[5px_5px_0_#07111f] transition hover:-translate-y-1 hover:bg-blue-pale hover:shadow-[8px_8px_0_#07111f]">
+        <span
+          class="inline-flex items-center rounded-full border border-border bg-white-pure px-4 py-2 text-sm font-medium text-muted transition-all duration-200 hover:border-blue/30 hover:text-blue-dark hover:bg-blue/5 hover:-translate-y-0.5"
+          style="transition-delay: {index * 20}ms;"
+        >
           {tool}
-        </div>
+        </span>
       {/each}
     </div>
   </div>

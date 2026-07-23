@@ -17,42 +17,42 @@
   }
 </script>
 
-<section id="faq" class="relative section-padding-lg noise-overlay grid-pattern-tight" aria-labelledby="faq-heading">
-  <div class="absolute inset-0 bg-gradient-to-b from-cyan/5 via-transparent to-transparent pointer-events-none"></div>
+<section id="faq" class="relative section-padding-lg bg-ghost" aria-labelledby="faq-heading">
+  <div class="container-premium">
+    <div class="grid lg:grid-cols-[1fr_1.5fr] gap-12 lg:gap-20">
+      <div use:reveal={{ x: -40 }}>
+        <span class="section-label-insane">FAQ</span>
+        <h2 id="faq-heading" class="mt-6 section-heading max-w-xl">
+          AI search
+          <br />
+          <span class="text-gradient-blue">questions answered.</span>
+        </h2>
+        <p class="mt-5 max-w-xl text-lg leading-relaxed text-muted">
+          The AI search landscape is new. Here's what you need to know to stay ahead.
+        </p>
+      </div>
 
-  <div class="container-brutal relative z-10 faq-grid">
-    <div use:reveal={{ x: -40 }}>
-      <span class="section-label-insane">FAQ</span>
-      <h2 id="faq-heading" class="mt-6 section-heading max-w-xl animate-text-reveal">
-        AI search
-        <br />
-        <span class="gradient-text-cyan">questions answered.</span>
-      </h2>
-      <p class="mt-5 max-w-xl text-lg font-bold leading-snug text-ink/70">
-        The AI search landscape is new. Here's what you need to know to stay ahead.
-      </p>
-    </div>
-
-    <div class="grid gap-3 sm:gap-4">
-      {#each faqs as faq, i}
-        <div use:reveal={{ x: 30, delay: i * 80 }} class="brutal-card-insane bg-white overflow-hidden">
-          <button
-            class="w-full px-4 py-4 sm:px-6 sm:py-5 text-left font-black uppercase text-sm tracking-wide flex items-center justify-between gap-4 hover:bg-blue-pale transition-colors"
-            onclick={() => toggle(i)}
-            aria-expanded={openIndex === i}
-          >
-            <span>{faq.q}</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 transition-transform duration-200" class:rotate-180={openIndex === i}>
-              <path d="M6 9l6 6 6-6"/>
-            </svg>
-          </button>
-          {#if openIndex === i}
-            <div class="px-4 pb-4 sm:px-6 sm:pb-5 text-sm font-bold leading-snug text-ink/70 border-t-3 border-ink pt-4 animate-slide-down">
-              {faq.a}
-            </div>
-          {/if}
-        </div>
-      {/each}
+      <div class="grid gap-3">
+        {#each faqs as faq, i}
+          <div use:reveal={{ y: 20, delay: i * 80 }} class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg overflow-hidden">
+            <button
+              class="w-full px-6 py-5 text-left font-semibold text-sm flex items-center justify-between gap-4 hover:bg-ghost transition-colors"
+              onclick={() => toggle(i)}
+              aria-expanded={openIndex === i}
+            >
+              <span class="font-display text-base">{faq.q}</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 transition-transform duration-200 text-muted" class:rotate-180={openIndex === i}>
+                <path d="M6 9l6 6 6-6"/>
+              </svg>
+            </button>
+            {#if openIndex === i}
+              <div class="px-6 pb-5 text-sm leading-relaxed text-muted border-t border-border pt-4">
+                {faq.a}
+              </div>
+            {/if}
+          </div>
+        {/each}
+      </div>
     </div>
   </div>
 </section>

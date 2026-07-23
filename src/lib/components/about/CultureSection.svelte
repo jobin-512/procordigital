@@ -2,78 +2,82 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section class="section-padding-lg noise-overlay zigzag" aria-labelledby="culture-heading">
-  <div class="container-brutal">
-    <div class="grid gap-12 lg:gap-16 lg:grid-cols-2 lg:items-center">
-      <div use:reveal>
-        <div class="section-label-cyber inline-flex">🎮 CULTURE</div>
-        <h2 id="culture-heading" class="mt-8 section-heading">
-          REMOTE.<br/>
-          <span class="gradient-neon">RUTHLESS.</span><br/>
-          <span class="gradient-plasma">REAL.</span>
+<section class="section-padding bg-white relative overflow-hidden" aria-labelledby="culture-heading">
+  <div class="absolute inset-0 bg-grid-subtle pointer-events-none"></div>
+  <div class="absolute bottom-0 right-0 w-[450px] h-[450px] bg-gradient-to-l from-emerald/5 to-transparent rounded-full blur-[100px] pointer-events-none animate-float" style="animation-delay: -5s;"></div>
+
+  <div class="container-premium relative z-10">
+    <div class="grid gap-12 lg:gap-16 lg:grid-cols-[1fr_1.2fr] lg:items-center">
+      <div use:reveal class="order-2 lg:order-1">
+        <span class="eyebrow">Culture</span>
+        <h2 id="culture-heading" class="section-heading mt-5">
+          Remote first.
+          <br />
+          <span class="text-gradient-emerald">Results first.</span>
         </h2>
-        <p class="mt-6 max-w-xl text-xl font-bold uppercase leading-relaxed">
-          Our office is wherever we can GET SHIT DONE. Remote-first by design, results-first by nature.
+        <p class="mt-4 text-base leading-relaxed text-muted max-w-lg">
+          Our office is wherever we get shit done. Remote-first by design, results-first by nature.
         </p>
-        
-        <div class="mt-8 space-y-4">
-          <div class="brutal-card-electric p-5 flex items-center gap-4">
-            <div class="w-14 h-14 border-4 border-white bg-plasma flex items-center justify-center text-2xl">☀</div>
+
+        <div class="mt-8 space-y-3">
+          <div class="premium-card p-5 flex items-center gap-4">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue/10 text-lg">☀</span>
             <div>
-              <p class="font-display uppercase">ASYNC-FIRST</p>
-              <p class="text-sm font-bold mt-1">Deep work > Pointless meetings</p>
+              <p class="text-sm font-semibold">Async-first</p>
+              <p class="text-xs text-muted">Deep work over pointless meetings</p>
             </div>
           </div>
-          <div class="brutal-card-neon p-5 flex items-center gap-4">
-            <div class="w-14 h-14 border-4 border-ink bg-electric flex items-center justify-center text-2xl text-white">🌍</div>
+          <div class="premium-card p-5 flex items-center gap-4">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-emerald/10 text-lg">🌍</span>
             <div>
-              <p class="font-display uppercase">GLOBAL DOMINATION</p>
-              <p class="text-sm font-bold mt-1">8 countries, 1 obsession: WINNING</p>
+              <p class="text-sm font-semibold">Global team</p>
+              <p class="text-xs text-muted">8 countries, one obsession: winning</p>
             </div>
           </div>
-          <div class="brutal-card-plasma p-5 flex items-center gap-4">
-            <div class="w-14 h-14 border-4 border-white bg-toxic flex items-center justify-center text-2xl">📚</div>
+          <div class="premium-card p-5 flex items-center gap-4">
+            <span class="flex h-12 w-12 shrink-0 items-center justify-center rounded-xl bg-blue/10 text-lg">📚</span>
             <div>
-              <p class="font-display uppercase text-white">LEARNING BUDGET</p>
-              <p class="text-sm font-bold mt-1 text-white">$2k/year for courses, books, CHAOS</p>
+              <p class="text-sm font-semibold">Learning budget</p>
+              <p class="text-xs text-muted">$2k/year for courses, books, conferences</p>
             </div>
           </div>
         </div>
       </div>
-      
-      <div use:reveal={{ delay: 200, y: 30 }} class="relative">
-        <div class="brutal-card card-padding-lg relative overflow-hidden rotate-1 hover:rotate-0 transition-transform">
-          <div class="absolute top-0 right-0 w-32 h-32 bg-electric/20 -rotate-12"></div>
-          
-          <h3 class="font-display text-2xl uppercase mb-6">THE DAILY GRIND</h3>
-          
-          <div class="space-y-6">
-            <div class="flex gap-4 items-start border-b-4 border-ink/20 pb-4">
-              <span class="font-display text-2xl text-electric w-20">9AM</span>
-              <div class="border-l-4 border-electric pl-4 flex-1">
-                <p class="font-display uppercase">SYNC UP</p>
-                <p class="font-bold text-sm mt-1">15 min or GTFO</p>
+
+      <div use:reveal={{ x: 20, delay: 150 }} class="order-1 lg:order-2">
+        <div class="premium-card p-6 sm:p-8 relative overflow-hidden">
+          <div class="absolute -top-8 -right-8 w-40 h-40 bg-gradient-to-bl from-emerald/5 to-transparent rounded-bl-full pointer-events-none"></div>
+          <div class="relative z-10">
+            <span class="badge mb-5">Typical day</span>
+
+            <div class="space-y-5">
+              <div class="flex gap-4 items-start border-b border-border pb-4">
+                <span class="text-sm font-semibold text-blue w-16 shrink-0">9 AM</span>
+                <div class="border-l-2 border-blue/30 pl-4">
+                  <p class="text-sm font-semibold">Sync up</p>
+                  <p class="text-xs text-muted mt-0.5">15 min standup. No more.</p>
+                </div>
               </div>
-            </div>
-            <div class="flex gap-4 items-start border-b-4 border-ink/20 pb-4">
-              <span class="font-display text-2xl text-neon w-20">10AM</span>
-              <div class="border-l-4 border-neon pl-4 flex-1">
-                <p class="font-display uppercase">DEEP WORK</p>
-                <p class="font-bold text-sm mt-1">Zero Slack. Full FOCUS.</p>
+              <div class="flex gap-4 items-start border-b border-border pb-4">
+                <span class="text-sm font-semibold text-emerald w-16 shrink-0">10 AM</span>
+                <div class="border-l-2 border-emerald/30 pl-4">
+                  <p class="text-sm font-semibold">Deep work</p>
+                  <p class="text-xs text-muted mt-0.5">Zero interruptions. Full focus.</p>
+                </div>
               </div>
-            </div>
-            <div class="flex gap-4 items-start border-b-4 border-ink/20 pb-4">
-              <span class="font-display text-2xl text-plasma w-20">2PM</span>
-              <div class="border-l-4 border-plasma pl-4 flex-1">
-                <p class="font-display uppercase">CLIENT WINS</p>
-                <p class="font-bold text-sm mt-1">Show us the NUMBERS</p>
+              <div class="flex gap-4 items-start border-b border-border pb-4">
+                <span class="text-sm font-semibold text-blue w-16 shrink-0">2 PM</span>
+                <div class="border-l-2 border-blue/30 pl-4">
+                  <p class="text-sm font-semibold">Client wins</p>
+                  <p class="text-xs text-muted mt-0.5">Show the numbers. Move the needle.</p>
+                </div>
               </div>
-            </div>
-            <div class="flex gap-4 items-start">
-              <span class="font-display text-2xl text-toxic w-20">EOD</span>
-              <div class="border-l-4 border-toxic pl-4 flex-1">
-                <p class="font-display uppercase">SHIP OR DIE</p>
-                <p class="font-bold text-sm mt-1">Every. Single. Day.</p>
+              <div class="flex gap-4 items-start">
+                <span class="text-sm font-semibold text-emerald w-16 shrink-0">EOD</span>
+                <div class="border-l-2 border-emerald/30 pl-4">
+                  <p class="text-sm font-semibold">Ship or die</p>
+                  <p class="text-xs text-muted mt-0.5">Every single day.</p>
+                </div>
               </div>
             </div>
           </div>

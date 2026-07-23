@@ -2,45 +2,49 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section class="section-padding-lg noise-overlay diagonal-lines" aria-labelledby="map-heading">
-  <div class="container-brutal">
-    <div use:reveal class="text-center mb-12">
-      <div class="section-label-cyber inline-flex">🌍 GLOBAL</div>
-      <h2 id="map-heading" class="mt-8 section-heading">
-        WE'RE <span class="gradient-neon">EVERYWHERE</span>
+<section class="section-padding bg-ghost relative overflow-hidden" aria-labelledby="locations-heading">
+  <div class="absolute inset-0 bg-grid-subtle pointer-events-none"></div>
+  <div class="absolute bottom-0 right-1/3 w-[400px] h-[400px] bg-gradient-to-l from-emerald/5 to-transparent rounded-full blur-[100px] pointer-events-none animate-float" style="animation-delay: -4s;"></div>
+
+  <div class="container-premium relative z-10">
+    <div use:reveal class="text-center mb-12 lg:mb-16">
+      <span class="eyebrow">Global reach</span>
+      <h2 id="locations-heading" class="section-heading mt-5">
+        We're <span class="text-gradient-blue">everywhere</span>
       </h2>
+      <p class="mt-4 text-base leading-relaxed text-muted max-w-xl mx-auto">
+        47 clients across 23 countries. One time zone matters: results time.
+      </p>
     </div>
-    
-    <div use:reveal={{ delay: 200, y: 40 }} class="brutal-card-void p-8 sm:p-12">
-      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-        <div class="text-center rotate-1 hover:rotate-0 transition-transform">
-          <div class="w-20 h-20 border-4 border-neon bg-neon mx-auto flex items-center justify-center text-3xl mb-4 shadow-[4px_4px_0_#0a0a0a]">🌎</div>
-          <h3 class="font-display text-xl uppercase">AMERICAS</h3>
-          <p class="mt-2 font-bold text-white/60">NYC • LA • São Paulo</p>
-        </div>
-        <div class="text-center -rotate-1 hover:rotate-0 transition-transform">
-          <div class="w-20 h-20 border-4 border-electric bg-electric mx-auto flex items-center justify-center text-3xl mb-4 shadow-[4px_4px_0_#cc00ff]">🌍</div>
-          <h3 class="font-display text-xl uppercase">EUROPE</h3>
-          <p class="mt-2 font-bold text-white/60">London • Berlin • Barcelona</p>
-        </div>
-        <div class="text-center rotate-2 hover:rotate-0 transition-transform">
-          <div class="w-20 h-20 border-4 border-cyber bg-cyber mx-auto flex items-center justify-center text-3xl mb-4">🌏</div>
-          <h3 class="font-display text-xl uppercase text-ink">APAC</h3>
-          <p class="mt-2 font-bold text-ink/60">Tokyo • Singapore • Sydney</p>
-        </div>
-        <div class="text-center -rotate-2 hover:rotate-0 transition-transform">
-          <div class="w-20 h-20 border-4 border-plasma bg-plasma mx-auto flex items-center justify-center text-3xl mb-4 shadow-[4px_4px_0_#cc5500]">🌐</div>
-          <h3 class="font-display text-xl uppercase">REMOTE</h3>
-          <p class="mt-2 font-bold text-white/60">Everywhere else</p>
-        </div>
+
+    <div use:reveal={{ y: 20 }} class="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <div class="premium-card p-6 text-center group">
+        <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-blue/10 text-2xl mx-auto mb-4 transition-all duration-300 group-hover:bg-blue group-hover:text-white-pure">🌎</span>
+        <h3 class="text-base font-semibold tracking-tight">Americas</h3>
+        <p class="text-sm text-muted mt-1">NYC LA São Paulo</p>
       </div>
-      
-      <div class="mt-12 text-center pt-8 border-t-4 border-white/20">
-        <p class="font-display text-3xl lg:text-4xl gradient-neon">
-          47 CLIENTS. 23 COUNTRIES.
-        </p>
-        <p class="mt-2 font-black uppercase text-white/50">ONE TIME ZONE MATTERS: RESULTS TIME</p>
+      <div class="premium-card p-6 text-center group">
+        <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald/10 text-2xl mx-auto mb-4 transition-all duration-300 group-hover:bg-emerald group-hover:text-white-pure">🌍</span>
+        <h3 class="text-base font-semibold tracking-tight">Europe</h3>
+        <p class="text-sm text-muted mt-1">London Berlin Barcelona</p>
       </div>
+      <div class="premium-card p-6 text-center group">
+        <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-blue/10 text-2xl mx-auto mb-4 transition-all duration-300 group-hover:bg-blue group-hover:text-white-pure">🌏</span>
+        <h3 class="text-base font-semibold tracking-tight">APAC</h3>
+        <p class="text-sm text-muted mt-1">Tokyo Singapore Sydney</p>
+      </div>
+      <div class="premium-card p-6 text-center group">
+        <span class="flex h-14 w-14 items-center justify-center rounded-xl bg-emerald/10 text-2xl mx-auto mb-4 transition-all duration-300 group-hover:bg-emerald group-hover:text-white-pure">🌐</span>
+        <h3 class="text-base font-semibold tracking-tight">Remote</h3>
+        <p class="text-sm text-muted mt-1">Everywhere else</p>
+      </div>
+    </div>
+
+    <div use:reveal class="mt-12 premium-card-dark p-8 text-center">
+      <p class="text-xl sm:text-2xl font-semibold tracking-tight text-white-pure">
+        47 clients. 23 countries. <span class="text-gradient-blue">One obsession.</span>
+      </p>
+      <p class="mt-2 text-sm text-white/50">Building systems that print predictable revenue.</p>
     </div>
   </div>
 </section>

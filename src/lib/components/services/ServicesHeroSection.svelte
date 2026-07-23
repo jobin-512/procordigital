@@ -2,54 +2,52 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section class="relative section-padding-hero noise-overlay grid-pattern-tight overflow-hidden" aria-labelledby="services-hero-heading">
-  <div class="absolute inset-0 bg-gradient-to-br from-blueprint/10 via-transparent to-cyan/10 pointer-events-none"></div>
-  <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-gradient-to-r from-accent/15 to-hot/10 rounded-full blur-3xl pointer-events-none"></div>
-  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-r from-cyan/10 to-blueprint/10 rounded-full blur-3xl pointer-events-none"></div>
+<section class="relative section-padding-hero overflow-hidden" aria-labelledby="services-hero-heading">
+  <div class="absolute inset-0 bg-gradient-to-br from-ink/5 via-transparent to-blue/5 pointer-events-none"></div>
+  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-gradient-to-r from-blue/8 to-emerald/5 rounded-full blur-3xl pointer-events-none animate-float"></div>
+  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-gradient-to-r from-emerald/5 to-ink/5 rounded-full blur-3xl pointer-events-none animate-float"></div>
 
-  <div class="container-brutal relative z-10">
+  <div class="container-premium relative z-10">
     <div use:reveal class="max-w-4xl">
       <span class="section-label-insane">Our Services</span>
-      <h1 id="services-hero-heading" class="mt-8 hero-heading-xl animate-text-reveal">
+      <h1 id="services-hero-heading" class="mt-8 hero-heading animate-text-reveal">
         Digital systems
         <br />
-        <span class="gradient-text-cyan">that actually</span>
+        <span class="text-gradient-blue">that actually</span>
         <br />
-        <span class="gradient-text-hot">move revenue.</span>
+        <span class="text-gradient-emerald">move revenue.</span>
       </h1>
-      <p class="mt-8 max-w-2xl text-xl lg:text-2xl font-bold leading-snug text-ink/70 animate-slide-up" style="animation-delay: 200ms;">
+      <p class="mt-8 max-w-2xl text-lg leading-relaxed text-muted animate-fade-up" style="animation-delay: 200ms;">
         From websites to payroll, from SEO to compliance — we build, optimize, and manage the digital backbone of your business. One team. Zero handoff friction.
       </p>
     </div>
 
     <div use:reveal={{ delay: 300, y: 20 }} class="mt-12 flex flex-wrap gap-4">
-      <a href="#website-development" class="brutal-button-blue-insane">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+      <a href="#website-development" class="btn-primary">
+        Explore services
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>
-        Explore services
       </a>
-      <a href="#contact" class="brutal-button-outline">
-        Get a free audit
-      </a>
+      <a href="#contact" class="btn-outline">Get a free audit</a>
     </div>
 
-    <div use:reveal={{ delay: 500, y: 30 }} class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
-        <p class="stat-number-lg text-blueprint">7</p>
-        <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Services</p>
+    <div use:reveal={{ delay: 500, y: 30 }} class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg p-6 text-center">
+        <p class="text-gradient-blue text-4xl font-semibold tracking-tight">7</p>
+        <p class="mt-1.5 text-xs font-semibold uppercase tracking-widest text-muted">Services</p>
       </div>
-      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
-        <p class="stat-number-lg text-hot">1</p>
-        <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Team</p>
+      <div class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg p-6 text-center">
+        <p class="text-gradient-emerald text-4xl font-semibold tracking-tight">1</p>
+        <p class="mt-1.5 text-xs font-semibold uppercase tracking-widest text-muted">Team</p>
       </div>
-      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
-        <p class="stat-number-lg text-cyan">0</p>
-        <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Silos</p>
+      <div class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg p-6 text-center">
+        <p class="text-gradient-blue text-4xl font-semibold tracking-tight">0</p>
+        <p class="mt-1.5 text-xs font-semibold uppercase tracking-widest text-muted">Silos</p>
       </div>
-      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
-        <p class="stat-number-lg text-lime">∞</p>
-        <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Scale</p>
+      <div class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg p-6 text-center">
+        <p class="text-gradient-emerald text-4xl font-semibold tracking-tight">∞</p>
+        <p class="mt-1.5 text-xs font-semibold uppercase tracking-widest text-muted">Scale</p>
       </div>
     </div>
   </div>

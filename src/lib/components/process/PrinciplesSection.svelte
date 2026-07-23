@@ -37,7 +37,7 @@
           <div class="absolute -top-3 -right-3 size-16 border-4 border-ink bg-{principle.color} rotate-6 opacity-15 group-hover:opacity-30 group-hover:rotate-0 transition-all duration-300 pointer-events-none"></div>
           <span class="step-number text-{principle.color} opacity-30">{principle.num}</span>
           <h3 class="font-display text-xl tracking-[-0.06em] mt-3 mb-2">{principle.title}</h3>
-          <p class="text-sm font-bold leading-snug text-ink/70">{principle.description}</p>
+          <p class="text-sm font-bold leading-snug text-muted">{principle.description}</p>
         </article>
       {/each}
     </div>

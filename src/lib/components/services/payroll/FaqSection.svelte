@@ -17,38 +17,50 @@
   }
 </script>
 
-<section id="faq" class="relative section-padding-lg noise-overlay grid-pattern-tight" aria-labelledby="faq-heading">
-  <div class="absolute inset-0 bg-gradient-to-b from-lime/5 via-transparent to-transparent pointer-events-none"></div>
+<section id="faq" class="section-padding relative overflow-hidden" aria-labelledby="faq-heading">
+  <div class="absolute inset-0 bg-gradient-to-b from-blue/3 via-transparent to-transparent pointer-events-none"></div>
 
-  <div class="container-brutal relative z-10 faq-grid">
-    <div use:reveal={{ x: -40 }}>
+  <div class="container-premium container-narrow relative z-10">
+    <div use:reveal class="mb-12 lg:mb-16">
       <span class="section-label-insane">FAQ</span>
       <h2 id="faq-heading" class="mt-6 section-heading max-w-xl animate-text-reveal">
         Payroll questions
         <br />
-        <span class="gradient-text-lime">answered.</span>
+        <span class="text-gradient-blue">answered.</span>
       </h2>
-      <p class="mt-5 max-w-xl text-lg font-bold leading-snug text-ink/70">
+      <p class="mt-4 text-base leading-relaxed text-muted max-w-xl">
         Payroll can be complex. We make it simple.
       </p>
     </div>
 
-    <div class="grid gap-3 sm:gap-4">
+    <div class="space-y-3">
       {#each faqs as faq, i}
-        <div use:reveal={{ x: 30, delay: i * 80 }} class="brutal-card-insane bg-white overflow-hidden">
+        <div use:reveal={{ y: 12, delay: i * 60 }} class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg overflow-hidden">
           <button
-            class="w-full px-4 py-4 sm:px-6 sm:py-5 text-left font-black uppercase text-sm tracking-wide flex items-center justify-between gap-4 hover:bg-blue-pale transition-colors"
+            class="w-full px-6 py-5 text-left text-sm font-medium flex items-center justify-between gap-4 hover:bg-blue/5 transition-colors"
             onclick={() => toggle(i)}
             aria-expanded={openIndex === i}
           >
             <span>{faq.q}</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="flex-shrink-0 transition-transform duration-200" class:rotate-180={openIndex === i}>
+            <svg
+              width="16"
+              height="16"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2.5"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="shrink-0 transition-transform duration-300"
+              class:rotate-180={openIndex === i}
+            >
               <path d="M6 9l6 6 6-6"/>
             </svg>
           </button>
           {#if openIndex === i}
-            <div class="px-4 pb-4 sm:px-6 sm:pb-5 text-sm font-bold leading-snug text-ink/70 border-t-3 border-ink pt-4 animate-slide-down">
-              {faq.a}
+            <div class="px-6 pb-6">
+              <div class="divider mb-4"></div>
+              <p class="text-sm text-muted leading-relaxed">{faq.a}</p>
             </div>
           {/if}
         </div>

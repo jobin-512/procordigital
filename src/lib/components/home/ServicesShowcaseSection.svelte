@@ -1,102 +1,91 @@
 <script lang="ts">
   import { reveal } from '$lib/actions/reveal';
-  import ImageSlot from '$lib/components/common/ImageSlot.svelte';
 
   const services = [
     {
-      title: 'SEO GROWTH SYSTEMS',
-      description: 'Technical audits, content clusters, topical authority maps, link velocity campaigns, local domination, and programmatic SEO at scale.',
-      icon: '🎯',
-      color: 'blueprint',
+      title: 'SEO Growth Systems',
+      description: 'Technical audits, content clusters, topical authority maps, link velocity campaigns, and programmatic SEO at scale.',
       stats: ['312% avg organic growth', '47 min first-page keywords', '12-month compounding assets'],
       cta: 'See SEO playbook'
     },
     {
-      title: 'PAID MEDIA SCALE',
-      description: 'Google/Meta/LinkedIn/TikTok campaign architecture, creative testing frameworks, bid strategy automation, audience expansion loops.',
-      icon: '💰',
-      color: 'hot',
+      title: 'Paid Media Scale',
+      description: 'Campaign architecture, creative testing frameworks, bid strategy automation, audience expansion loops across Google, Meta, LinkedIn.',
       stats: ['3.8x ROAS median', '67% CAC reduction', '14-day creative velocity'],
       cta: 'View ad library'
     },
     {
-      title: 'FUNNEL ARCHITECTURE',
-      description: 'Landing page systems, offer engineering, VSL/USL production, checkout optimization, upsell/downsell sequences, post-purchase nurture.',
-      icon: '🏗️',
-      color: 'cyan',
+      title: 'Funnel Architecture',
+      description: 'Landing page systems, offer engineering, VSL and USL production, checkout optimization, upsell and downsell sequences.',
       stats: ['19% avg conversion lift', '42% AOV increase', '3-step max funnel depth'],
       cta: 'Audit my funnel'
     },
     {
-      title: 'AUTOMATION ENGINES',
-      description: 'CRM setup (HubSpot/Close/Pipedrive), lead scoring, behavioral email/SMS sequences, sales alerts, pipeline dashboards, revenue attribution.',
-      icon: '⚡',
-      color: 'lime',
+      title: 'Marketing Automation',
+      description: 'CRM setup, lead scoring, behavioral email and SMS sequences, pipeline dashboards, revenue attribution.',
       stats: ['89% lead response < 5min', '3.2x SQL conversion', '100% pipeline visibility'],
       cta: 'Map my automation'
     },
     {
-      title: 'CONTENT FACTORIES',
-      description: 'SEO content pipelines, thought leadership systems, case study engines, newsletter operations, social content repurposing, asset libraries.',
-      icon: '📝',
-      color: 'blue-pop',
+      title: 'Content Engines',
+      description: 'SEO content pipelines, thought leadership systems, case study engines, newsletter operations, social content repurposing.',
       stats: ['47 assets/month capacity', '12:1 content ROI', 'Zero writer bottleneck'],
       cta: 'Start content engine'
     },
     {
-      title: 'ANALYTICS GOVERNANCE',
-      description: 'GA4/GTM/Server-side implementation, event taxonomy, custom dashboards (Looker/PowerBI), attribution modeling, data quality SLAs.',
-      icon: '📊',
-      color: 'ink',
+      title: 'Analytics & Attribution',
+      description: 'GA4 and GTM implementation, event taxonomy, custom dashboards, attribution modeling, data quality SLAs.',
       stats: ['99.9% data accuracy', 'Real-time decision loops', 'Single source of truth'],
       cta: 'Fix my tracking'
     }
   ];
 </script>
 
-<section class="relative section-padding-lg noise-overlay grid-pattern-tight" aria-labelledby="services-heading">
-  <div class="absolute inset-0 bg-gradient-to-b from-transparent via-blueprint/5 to-transparent pointer-events-none"></div>
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-accent/10 to-cyan/10 rounded-full blur-3xl pointer-events-none"></div>
-
-  <div class="container-brutal relative z-10">
-    <div use:reveal class="mb-12 lg:mb-16">
-      <span class="section-label-insane">What we deploy</span>
-      <h2 id="services-heading" class="mt-6 section-heading max-w-4xl animate-text-reveal">
+<section class="section-padding bg-ghost relative overflow-hidden" aria-labelledby="services-heading">
+  <div class="container-premium relative z-10">
+    <div use:reveal class="max-w-3xl mb-12 lg:mb-16">
+      <span class="eyebrow">What we deploy</span>
+      <h2 id="services-heading" class="section-heading mt-5">
         Six growth systems.
         <br />
-        <span class="gradient-text-cyan">Zero integration gaps.</span>
+        <span class="text-gradient-blue">Zero integration gaps.</span>
       </h2>
-      <p class="mt-5 max-w-2xl text-lg font-bold leading-snug text-ink/70">
-        Each system is a modular, battle-tested machine. Deploy one. Stack all six. They share data, creative, and strategy — no silos, no handoff friction.
+      <p class="mt-4 text-base leading-relaxed text-muted max-w-xl">
+        Each system is modular and battle-tested. Deploy one. Stack all six. They share data, creative, and strategy.
       </p>
     </div>
 
-    <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+    <div class="grid gap-5 md:grid-cols-2 lg:grid-cols-3">
       {#each services as service, index}
-        <article use:reveal={{ y: 30, delay: index * 80 }} class="brutal-card-insane p-6 relative overflow-hidden group" style="--accent-color: var(--color-{service.color})">
-          <div class="absolute inset-0 bg-gradient-to-br from-{service.color}/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
-          <div class="absolute -top-3 -right-3 size-16 lg:size-20 border-4 border-ink bg-{service.color} rotate-6 opacity-20 group-hover:opacity-40 group-hover:rotate-0 transition-all duration-300 pointer-events-none"></div>
-          <div class="absolute bottom-3 left-3 size-12 lg:size-16 border-4 border-ink bg-{service.color} -rotate-6 opacity-20 group-hover:opacity-40 group-hover:rotate-0 transition-all duration-300 pointer-events-none"></div>
-
-          <div class="relative z-10 mb-4 flex items-center gap-3">
-            <span class="text-3xl lg:text-4xl animate-bounce-in" style="animation-delay: {index * 100 + 300}ms;">{service.icon}</span>
-            <span class="font-display text-2xl lg:text-3xl tracking-[-0.08em] text-{service.color}">{service.title}</span>
+        <article
+          use:reveal={{ y: 20, delay: index * 60 }}
+          class="premium-card p-6 group relative overflow-hidden hover:scale-[1.02] hover:shadow-xl transition-all duration-500"
+        >
+          <div class="flex items-center gap-3 mb-4">
+            <span class="flex h-8 w-8 items-center justify-center rounded-lg bg-blue/10 text-xs font-semibold text-blue-dark">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/>
+              </svg>
+            </span>
+            <h3 class="text-base font-semibold tracking-tight">{service.title}</h3>
           </div>
 
-          <p class="relative z-10 text-base font-bold leading-snug mb-5 text-ink/80">{service.description}</p>
+          <p class="text-sm text-muted leading-relaxed mb-5">{service.description}</p>
 
-          <ul class="relative z-10 space-y-2 mb-5" role="list">
+          <ul class="space-y-2 mb-5">
             {#each service.stats as stat}
-              <li class="flex items-center gap-2 text-sm font-bold text-ink/70 animate-slide-up" style="animation-delay: {index * 100 + 450}ms;">
-                <span class="w-5 h-5 border-2 border-ink bg-{service.color} flex items-center justify-center text-xs">✓</span>
+              <li class="flex items-center gap-2 text-sm text-muted">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="text-blue shrink-0">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
                 {stat}
               </li>
             {/each}
           </ul>
 
-          <a href="#contact" class="relative z-10 inline-flex items-center gap-2 brutal-button-outline text-sm px-5 py-3 group/link">
+          <a href="/contact" class="inline-flex items-center gap-1.5 text-sm font-medium text-blue-dark transition-colors hover:text-blue group/link">
             {service.cta}
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/link:translate-x-1">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="transition-transform group-hover/link:translate-x-0.5">
               <path d="M5 12h14M12 5l7 7-7 7"/>
             </svg>
           </a>
@@ -104,13 +93,13 @@
       {/each}
     </div>
 
-    <div use:reveal={{ delay: 400, y: 20 }} class="mt-12 lg:mt-16 text-center">
-      <p class="font-black uppercase tracking-widest text-sm mb-4 gradient-text-ink">Need a custom stack?</p>
-      <a href="#contact" class="brutal-button-insane inline-flex">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
-          <path d="M12 5v14M5 12h14"/>
-        </svg>
+    <div use:reveal class="mt-12 text-center">
+      <p class="text-sm text-muted mb-4">Need a custom stack?</p>
+      <a href="/contact" class="btn-primary">
         Build my custom system
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
       </a>
     </div>
   </div>

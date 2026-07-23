@@ -2,48 +2,45 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section id="contact" class="relative px-4 section-padding-hero noise-overlay grid-pattern" aria-labelledby="aeo-cta-heading">
-  <div class="absolute inset-0 bg-gradient-to-br from-ink via-blueprint to-ink pointer-events-none opacity-90" aria-hidden="true"></div>
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-r from-cyan/15 to-blueprint/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+<section id="contact" class="relative section-padding-hero bg-ink overflow-hidden" aria-labelledby="aeo-cta-heading">
+  <div class="orb-container" aria-hidden="true">
+    <div class="orb orb--1"></div>
+    <div class="orb orb--2"></div>
+  </div>
+  <div class="bg-noise-light"></div>
 
-  <div use:reveal={{ scale: 0.95 }} class="container-brutal cta-card bg-ink z-10">
-    <div class="absolute left-6 top-6 hidden h-16 w-16 border-4 border-white bg-cyan md:block animate-floaty" aria-hidden="true"></div>
-    <div class="absolute right-6 bottom-6 hidden h-20 w-20 border-4 border-white bg-accent md:block animate-floaty [animation-delay:1.5s]" aria-hidden="true"></div>
+  <div use:reveal={{ scale: 0.95 }} class="container-premium relative z-10 text-center">
+    <span class="badge-dark inline-block mb-8">Ready for AI search?</span>
 
-    <span class="section-label-void inline-block mb-6 animate-slide-up">Ready for AI search?</span>
-
-    <h2 id="aeo-cta-heading" class="mx-auto mt-6 max-w-4xl cta-heading text-white animate-text-reveal">
+    <h2 id="aeo-cta-heading" class="mx-auto max-w-4xl hero-heading text-white">
       Own the AI
       <br />
-      <span class="gradient-text-cyan">search results.</span>
+      <span class="text-gradient-blue">search results.</span>
     </h2>
 
-    <p class="mx-auto mt-6 max-w-2xl text-xl font-bold leading-snug text-white/70 animate-slide-up" style="animation-delay: 200ms;">
+    <p class="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-white/60">
       Get a free AI search audit. We'll show you exactly how AI engines see your brand — and how to fix it.
     </p>
 
-    <form class="mx-auto mt-8 grid max-w-3xl gap-3 sm:grid-cols-[1fr_auto] animate-slide-up" style="animation-delay: 350ms;" aria-label="AI search audit request">
+    <form class="mx-auto mt-10 max-w-xl flex flex-col sm:flex-row gap-3" aria-label="AI search audit request">
       <label class="sr-only" for="aeo-email">Email address</label>
       <input
         id="aeo-email"
-        class="border-4 border-white bg-void px-4 py-3 sm:px-5 sm:py-4 text-base sm:text-lg font-bold shadow-[5px_5px_0_#fff04d] outline-none placeholder:text-white/40 focus:bg-blueprint transition-colors text-white"
+        class="input-premium-dark flex-1"
         type="email"
         placeholder="you@company.com"
         required
       />
-      <button class="brutal-button-insane whitespace-nowrap bg-cyan text-ink" type="submit">
+      <button class="btn-blue whitespace-nowrap" type="submit">
         Get AI audit
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M12 5l7 7-7 7"/>
+        </svg>
       </button>
     </form>
 
-    <p class="mt-5 text-sm font-bold text-white/40 animate-slide-up" style="animation-delay: 500ms;">
+    <p class="mt-5 text-sm text-white/40">
       Free audit. No obligation. AI citation report + optimization roadmap in 48 hours.
     </p>
   </div>
 </section>
-
-<style>
-  @media (prefers-reduced-motion: reduce) {
-    .animate-floaty { animation: none !important; }
-  }
-</style>

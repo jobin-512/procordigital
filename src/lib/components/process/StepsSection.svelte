@@ -93,7 +93,7 @@
             <p class="text-lg font-bold leading-snug mb-4">{step.description}</p>
 
             <div class="mb-4">
-              <p class="font-black uppercase text-xs tracking-widest mb-2 text-ink/60">SPRINT DELIVERABLES</p>
+              <p class="font-black uppercase text-xs tracking-widest mb-2 text-muted">SPRINT DELIVERABLES</p>
               <ul class="space-y-2" role="list">
                 {#each step.deliverables as d}
                   <li class="flex items-center gap-2 text-sm font-bold group-hover:translate-x-1 transition-transform duration-150">
@@ -105,7 +105,7 @@
             </div>
 
             <div class="flex items-center justify-between pt-3 border-t-4 border-ink">
-              <span class="font-black uppercase text-xs tracking-widest text-ink/50">TIMELINE</span>
+              <span class="font-black uppercase text-xs tracking-widest text-muted">TIMELINE</span>
               <span class="font-display text-xl tracking-[-0.08em] text-{step.color}">{step.timeline}</span>
             </div>
           </div>

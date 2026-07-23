@@ -2,100 +2,85 @@
   import { reveal } from '$lib/actions/reveal';
 
   const oldWay = [
-    { label: 'Retainer for "activity"', detail: 'Pay for hours, not outcomes. Busy work disguised as strategy.', icon: '⏳' },
-    { label: 'Siloed channel vendors', detail: 'SEO guy doesn\'t talk to ads guy. Creative team ghosted. Data fragmented.', icon: '🏝️' },
-    { label: 'Vanity metric reports', detail: 'Impressions! Likes! Traffic! Zero connection to pipeline or revenue.', icon: '📊' },
-    { label: 'Junior execution', detail: 'Senior sells. Junior delivers. You\'re the training ground.', icon: '👶' },
-    { label: 'Rigid 12-month contracts', detail: 'Locked in before you know if it works. Exit penalties. Zero leverage.', icon: '🔒' },
-    { label: 'Black box creative', detail: 'No testing framework. No iteration loops. "Trust the process" = hope.', icon: '🎨' },
-    { label: 'Reactive optimization', detail: 'Monthly check-ins. "Let\'s wait and see." Money burns while you wait.', icon: '🐢' },
-    { label: 'You own nothing', detail: 'Accounts, pixels, data, creative — all locked in their ecosystem.', icon: '🚫' }
+    { label: 'Retainer for "activity"', detail: 'Pay for hours, not outcomes. Busy work disguised as strategy.' },
+    { label: 'Siloed channel vendors', detail: 'SEO does not talk to ads. Creative ghosted. Data fragmented.' },
+    { label: 'Vanity metric reports', detail: 'Impressions, likes, traffic. Zero connection to revenue.' },
+    { label: 'Junior execution', detail: 'Senior sells. Junior delivers. You are the training ground.' },
+    { label: 'Rigid contracts', detail: 'Locked in before you know if it works. Exit penalties.' },
+    { label: 'You own nothing', detail: 'Accounts, pixels, data, creative — locked in their ecosystem.' },
   ];
 
   const procorWay = [
-    { label: 'Sprint-based outcomes', detail: 'Pay for systems deployed & metrics moved. Every sprint ships revenue assets.', icon: '🎯' },
-    { label: 'Unified growth architecture', detail: 'One team. One strategy. Shared data. Creative fuels SEO fuels ads fuels email.', icon: '🏗️' },
-    { label: 'Revenue-tied KPIs only', detail: 'Leads → SQLs → Pipeline → Revenue. Every metric traces to bank account.', icon: '💰' },
-    { label: 'Senior-led, senior-executed', detail: 'The strategist builds. No handoff degradation. You get the A-team.', icon: '👑' },
-    { label: '30-day sprint cycles', detail: 'Kill criteria on every bet. Pivot or double down monthly. No sunk cost traps.', icon: '⚡' },
-    { label: 'Creative testing engine', detail: '12+ concepts/week. Statistical significance. Losers killed. Winners scaled.', icon: '🧪' },
-    { label: 'Weekly decision loops', detail: 'Monday standup. Wednesday data. Friday bets. Money moves at speed of insight.', icon: '🔄' },
-    { label: 'You own everything', detail: 'Ad accounts. Pixels. CRM. Creative. Code. Data. Zero vendor lock-in. Ever.', icon: '🔓' }
+    { label: 'Sprint-based outcomes', detail: 'Pay for systems deployed and metrics moved. Every sprint ships revenue assets.' },
+    { label: 'Unified architecture', detail: 'One team, one strategy, shared data. Creative fuels SEO fuels ads.' },
+    { label: 'Revenue-tied KPIs', detail: 'Leads to SQLs to pipeline to revenue. Every metric traces to the bank account.' },
+    { label: 'Senior-led execution', detail: 'The strategist builds. No handoff degradation. You get the A-team.' },
+    { label: 'Month-to-month', detail: 'Cancel anytime. Kill criteria on every bet. No sunk cost traps.' },
+    { label: 'You own everything', detail: 'Ad accounts, pixels, CRM, creative, code, data. Zero vendor lock-in.' },
   ];
 </script>
 
-<section id="comparison" class="relative section-padding-lg noise-overlay grid-pattern" aria-labelledby="comparison-heading">
-  <div class="absolute inset-0 bg-gradient-to-b from-ink/95 via-ink to-ink/90 pointer-events-none" aria-hidden="true"></div>
-  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[800px] h-[800px] bg-gradient-to-r from-blueprint/10 to-hot/10 rounded-full blur-3xl pointer-events-none" aria-hidden="true"></div>
+<section id="comparison" class="section-padding bg-ink text-white-pure relative overflow-hidden" aria-labelledby="comparison-heading">
+  <div class="absolute inset-0 bg-grid-subtle-dark pointer-events-none"></div>
+  <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-blue/3 rounded-full blur-[120px] pointer-events-none animate-float"></div>
 
-  <div class="container-brutal relative z-10">
-    <div use:reveal class="mb-12 lg:mb-16 text-center">
-      <span class="section-label-void inline-block">Why Procor</span>
-      <h2 id="comparison-heading" class="mt-6 font-display text-5xl leading-[0.9] tracking-[-0.08em] sm:text-6xl lg:text-8xl text-white animate-text-reveal">
+  <div class="container-premium relative z-10">
+    <div use:reveal class="max-w-3xl mb-12 lg:mb-16">
+      <span class="eyebrow text-white/40 before:bg-white/20" style="color: rgba(255,255,255,0.5);">Why Procor</span>
+      <h2 id="comparison-heading" class="section-heading mt-5 text-white-pure">
         Less agency fog.
         <br />
-        <span class="gradient-text-accent">More growth architecture.</span>
+        <span class="text-gradient-blue">More growth architecture.</span>
       </h2>
-      <p class="mt-5 max-w-2xl mx-auto text-lg font-bold leading-snug text-blue-50">
-        The old model is broken. You know it. We replaced it with a system that compounds.
+      <p class="mt-4 text-base leading-relaxed text-white/50 max-w-xl">
+        The old model is broken. We replaced it with a system that compounds.
       </p>
     </div>
 
     <div class="grid gap-6 lg:grid-cols-2">
-      <article use:reveal={{ x: -40 }} class="brutal-card-insane border-white bg-ink/50 p-6 text-white shadow-[8px_8px_0_#4db7ff] backdrop-blur-sm">
-        <div class="absolute -top-4 -right-4 size-16 lg:size-20 border-4 border-white bg-hot/20 rotate-6 opacity-30" aria-hidden="true"></div>
-
-        <h3 class="font-display text-4xl tracking-[-0.08em] mb-6 relative z-10 flex items-center gap-3">
-          <span class="text-4xl">💀</span>
+      <article use:reveal={{ x: -20 }} class="premium-card-dark p-6">
+        <h3 class="text-lg font-semibold tracking-tight mb-6 flex items-center gap-3 text-white/70">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-muted">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="15" y1="9" x2="9" y2="15"/>
+            <line x1="9" y1="9" x2="15" y2="15"/>
+          </svg>
           The Old Way
         </h3>
 
-        <ul class="grid gap-4 relative z-10" role="list">
+        <ul class="space-y-3">
           {#each oldWay as item}
-            <li class="border-4 border-white bg-ink/30 p-5 group relative overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-r from-hot/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div class="flex items-start gap-4 relative z-10">
-                <span class="text-3xl lg:text-4xl animate-shake" style="animation-delay: 2s;">{item.icon}</span>
-                <div>
-                  <p class="font-black uppercase text-lg">{item.label}</p>
-                  <p class="mt-1 text-sm font-bold text-white/70">{item.detail}</p>
-                </div>
-              </div>
+            <li class="rounded-lg border border-border bg-surface p-4">
+              <p class="text-sm font-medium mb-1 text-white/80">{item.label}</p>
+              <p class="text-xs text-white/40">{item.detail}</p>
             </li>
           {/each}
         </ul>
       </article>
 
-      <article use:reveal={{ x: 40, delay: 120 }} class="brutal-card-insane border-white bg-blueprint/90 p-6 text-white shadow-[8px_8px_0_#fff04d] backdrop-blur-sm">
-        <div class="absolute -top-4 -left-4 size-16 lg:size-20 border-4 border-white bg-accent/20 -rotate-6 opacity-30" aria-hidden="true"></div>
-
-        <h3 class="font-display text-4xl tracking-[-0.08em] mb-6 relative z-10 flex items-center gap-3">
-          <span class="text-4xl">⚡</span>
+      <article use:reveal={{ x: 20, delay: 80 }} class="premium-card-dark p-6 border-blue/20">
+        <h3 class="text-lg font-semibold tracking-tight mb-6 flex items-center gap-3 text-blue-light">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
           The Procor Way
         </h3>
 
-        <ul class="grid gap-4 relative z-10" role="list">
+        <ul class="space-y-3">
           {#each procorWay as item}
-            <li class="border-4 border-white bg-ink/30 p-5 group relative overflow-hidden">
-              <div class="absolute inset-0 bg-gradient-to-r from-cyan/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <div class="flex items-start gap-4 relative z-10">
-                <span class="text-3xl lg:text-4xl animate-bounce-in" style="animation-delay: 1s;">{item.icon}</span>
-                <div>
-                  <p class="font-black uppercase text-lg text-accent">{item.label}</p>
-                  <p class="mt-1 text-sm font-bold text-white/80">{item.detail}</p>
-                </div>
-              </div>
+            <li class="rounded-lg border border-blue/10 bg-blue/5 p-4">
+              <p class="text-sm font-medium mb-1 text-blue-light">{item.label}</p>
+              <p class="text-xs text-white/50">{item.detail}</p>
             </li>
           {/each}
         </ul>
       </article>
     </div>
 
-    <div use:reveal={{ delay: 400, y: 20 }} class="mt-12 lg:mt-16 text-center">
-      <div class="brutal-card-insane bg-accent p-6 inline-block mx-auto shadow-[8px_8px_0_#07111f]">
-        <p class="font-black uppercase tracking-widest text-xs mb-3 text-blueprint">THE BOTTOM LINE</p>
-        <p class="font-display text-3xl lg:text-4xl tracking-[-0.08em]">Agencies manage spend.</p>
-        <p class="font-display text-3xl lg:text-4xl tracking-[-0.08em] gradient-text-hot">We build assets that print.</p>
+    <div use:reveal class="mt-12 text-center">
+      <div class="premium-card-blue p-6 inline-block mx-auto animate-glow-pulse">
+        <p class="text-xs font-semibold uppercase tracking-widest text-blue-dark mb-2">The bottom line</p>
+        <p class="text-xl font-semibold tracking-tight">Agencies manage spend. We build assets that print.</p>
       </div>
     </div>
   </div>

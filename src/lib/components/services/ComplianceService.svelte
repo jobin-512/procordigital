@@ -19,54 +19,56 @@
   ];
 </script>
 
-<section id="compliance" class="relative section-padding-lg noise-overlay grid-pattern-tight overflow-hidden" aria-labelledby="compliance-heading">
-  <div class="absolute inset-0 bg-gradient-to-b from-accent/5 via-transparent to-hot/5 pointer-events-none"></div>
-  <div class="absolute top-1/3 left-0 w-[500px] h-[500px] bg-gradient-to-r from-accent/8 to-hot/8 rounded-full blur-3xl pointer-events-none"></div>
+<section id="compliance" class="relative section-padding-lg overflow-hidden" aria-labelledby="compliance-heading">
+  <div class="absolute inset-0 bg-gradient-to-b from-blue/3 via-transparent to-ink/3 pointer-events-none"></div>
+  <div class="absolute top-1/3 left-0 w-[500px] h-[500px] bg-gradient-to-r from-blue/5 to-emerald/5 rounded-full blur-3xl pointer-events-none animate-float"></div>
 
-  <div class="container-brutal relative z-10 two-col-grid">
-    <div use:reveal={{ x: -40 }} class="order-2 lg:order-1 brutal-card-insane bg-white card-padding-lg">
-      <div class="mb-5 flex items-center gap-3 border-4 border-ink bg-accent p-4">
-        <span class="text-3xl">📋</span>
-        <span class="font-black uppercase text-sm text-ink">Compliance toolkit</span>
+  <div class="container-premium relative z-10">
+    <div class="grid gap-10 lg:grid-cols-2 lg:gap-16 items-center">
+      <div use:reveal={{ x: -20 }} class="order-2 lg:order-1 premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg p-6 sm:p-8">
+        <div class="flex items-center gap-3 mb-5 pb-4 border-b border-black/5">
+          <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-blue text-ink text-sm font-semibold">C</span>
+          <span class="font-semibold uppercase text-xs tracking-widest text-muted">Compliance toolkit</span>
+        </div>
+
+        <ul class="space-y-3" role="list">
+          {#each features as feature, i}
+            <li class="flex items-center gap-3 text-sm font-medium text-muted" use:reveal={{ y: 8, delay: 180 + i * 60 }}>
+              <span class="flex-shrink-0 w-5 h-5 rounded-full bg-blue flex items-center justify-center text-ink text-[9px] font-bold">✓</span>
+              {feature}
+            </li>
+          {/each}
+        </ul>
+
+        <div class="mt-6 pt-5 border-t border-black/5">
+          <a href="/services/compliance" class="btn-primary w-full justify-center text-sm">
+            Learn more
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </div>
       </div>
 
-      <ul class="space-y-3" role="list">
-        {#each features as feature, i}
-          <li class="flex items-center gap-3 text-sm font-bold text-ink/80" use:reveal={{ y: 12, delay: 180 + i * 60 }}>
-            <span class="w-6 h-6 border-3 border-ink bg-accent flex items-center justify-center text-xs text-ink flex-shrink-0">✓</span>
-            {feature}
-          </li>
-        {/each}
-      </ul>
+      <div use:reveal={{ x: 20, delay: 150 }} class="order-1 lg:order-2">
+        <span class="section-label-insane">Compliance</span>
+        <h2 id="compliance-heading" class="mt-6 section-heading animate-text-reveal">
+          Stay compliant.
+          <br />
+          <span class="text-gradient-blue">Stay protected.</span>
+        </h2>
+        <p class="mt-5 text-base leading-relaxed text-muted">
+          Regulations change fast. We keep your business ahead of them. From GDPR to HIPAA, SOX to industry-specific mandates — we audit, document, and monitor so you never face a penalty.
+        </p>
 
-      <div class="mt-6 pt-5 border-t-4 border-ink">
-        <a href="/services/compliance" class="brutal-button-insane w-full justify-center">
-          Learn more
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="ml-2">
-            <path d="M5 12h14M12 5l7 7-7 7"/>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <div use:reveal={{ x: 40, delay: 150 }} class="order-1 lg:order-2">
-      <span class="section-label-insane">Compliance</span>
-      <h2 id="compliance-heading" class="mt-6 section-heading max-w-xl animate-text-reveal">
-        Stay compliant.
-        <br />
-        <span class="gradient-text-accent">Stay protected.</span>
-      </h2>
-      <p class="mt-5 max-w-xl text-lg font-bold leading-snug text-ink/70">
-        Regulations change fast. We keep your business ahead of them. From GDPR to HIPAA, SOX to industry-specific mandates — we audit, document, and monitor so you never face a penalty.
-      </p>
-
-      <div class="mt-8 flex flex-wrap gap-3">
-        {#each stats as stat, i}
-          <div class="border-4 border-ink bg-white px-5 py-3 shadow-[4px_4px_0_#07111f]" use:reveal={{ y: 20, delay: 200 + i * 100 }}>
-            <p class="stat-number text-ink">{stat.value}</p>
-            <p class="mt-1 font-black uppercase text-[10px] tracking-widest text-ink/50">{stat.label}</p>
-          </div>
-        {/each}
+        <div class="mt-8 flex flex-wrap gap-3">
+          {#each stats as stat, i}
+            <div class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg px-4 py-3" use:reveal={{ y: 12, delay: 200 + i * 80 }}>
+              <p class="font-semibold text-2xl tracking-tight text-gradient-blue">{stat.value}</p>
+              <p class="mt-0.5 text-[10px] font-semibold uppercase tracking-widest text-muted">{stat.label}</p>
+            </div>
+          {/each}
+        </div>
       </div>
     </div>
   </div>

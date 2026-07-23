@@ -2,51 +2,50 @@
   import { reveal } from '$lib/actions/reveal';
 </script>
 
-<section class="relative section-padding-hero noise-overlay grid-pattern-tight overflow-hidden" aria-labelledby="seo-hero-heading">
-  <div class="absolute inset-0 bg-gradient-to-br from-blueprint/10 via-transparent to-lime/10 pointer-events-none"></div>
-  <div class="absolute top-0 left-0 w-[500px] h-[500px] bg-gradient-to-r from-blueprint/15 to-lime/10 rounded-full blur-3xl pointer-events-none"></div>
+<section class="relative section-padding-hero overflow-hidden bg-grid-subtle" aria-labelledby="seo-hero-heading">
+  <div class="absolute inset-0 bg-gradient-to-b from-blue/5 via-transparent to-emerald/5 pointer-events-none"></div>
 
-  <div class="container-brutal relative z-10">
+  <div class="container-premium relative z-10">
     <div use:reveal class="max-w-4xl">
       <span class="section-label-insane">SEO Growth</span>
-      <h1 id="seo-hero-heading" class="mt-8 hero-heading-xl animate-text-reveal">
+      <h1 id="seo-hero-heading" class="mt-8 hero-heading animate-text-reveal">
         Organic traffic
         <br />
-        <span class="gradient-text-cyan">that compounds</span>
+        <span class="text-gradient-emerald">that compounds</span>
         <br />
-        <span class="gradient-text-hot">every month.</span>
+        <span class="text-gradient-blue">every month.</span>
       </h1>
-      <p class="mt-8 max-w-2xl text-xl lg:text-2xl font-bold leading-snug text-ink/70 animate-slide-up" style="animation-delay: 200ms;">
+      <p class="mt-8 max-w-2xl text-lg leading-relaxed text-muted">
         SEO is a long game — but most agencies play it wrong. We build systems, not tasks. Technical foundations, content engines, and authority loops that compound over 6, 12, 24 months.
       </p>
     </div>
 
     <div use:reveal={{ delay: 300, y: 20 }} class="mt-12 flex flex-wrap gap-4">
-      <a href="#contact" class="brutal-button-blue-insane">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="mr-2">
+      <a href="#contact" class="btn-primary">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="mr-1">
           <path d="M5 12h14M12 5l7 7-7 7"/>
         </svg>
         Start SEO growth
       </a>
-      <a href="#process" class="brutal-button-outline">See our process</a>
+      <a href="#process" class="btn-outline">See our process</a>
     </div>
 
-    <div use:reveal={{ delay: 500, y: 30 }} class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-3 sm:gap-4">
-      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
-        <p class="stat-number-lg text-blueprint">+312%</p>
-        <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Avg organic growth</p>
+    <div use:reveal={{ delay: 500, y: 30 }} class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg px-5 py-6 text-center">
+        <p class="stat-number text-gradient-emerald">+312%</p>
+        <p class="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-muted">Avg organic growth</p>
       </div>
-      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
-        <p class="stat-number-lg text-hot">247+</p>
-        <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">First-page keywords</p>
+      <div class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg px-5 py-6 text-center">
+        <p class="stat-number text-gradient-blue">247+</p>
+        <p class="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-muted">First-page keywords</p>
       </div>
-      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
-        <p class="stat-number-lg text-cyan">90 days</p>
-        <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">ROI timeline</p>
+      <div class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg px-5 py-6 text-center">
+        <p class="stat-number text-gradient-emerald">90 days</p>
+        <p class="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-muted">ROI timeline</p>
       </div>
-      <div class="border-4 border-ink bg-white card-padding shadow-[6px_6px_0_#07111f]">
-        <p class="stat-number-lg text-lime">12mo</p>
-        <p class="mt-1 font-black uppercase text-xs tracking-widest text-ink/60">Compounding asset</p>
+      <div class="premium-card transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg px-5 py-6 text-center">
+        <p class="stat-number text-gradient-blue">12mo</p>
+        <p class="mt-1.5 text-[11px] font-semibold uppercase tracking-widest text-muted">Compounding asset</p>
       </div>
     </div>
   </div>
